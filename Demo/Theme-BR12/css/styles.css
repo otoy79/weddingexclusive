@@ -728,22 +728,22 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   position: absolute;
   top: -30px;
   right: 0px;
-  background: rgb(156, 90, 20, 0.5);
+  background: rgb(156, 90, 20);
   padding: 4px 14px;
-  border-radius: 20px;
+  border-radius: 4px;
   font-size: 15px;
   display: none;
 }
 .copy-text button::after {
   content: "";
   position: absolute;
-  top: -8px;
+  position: absolute;
+  top: -5px;
   right: 25px;
-  width: 8px;
-  height: 18px;
-  border-radius: 0 150px 0 150px;
-  background: rgb(156, 90, 20, 0.4);
-  transform: rotate(45deg);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 16px solid rgb(156, 90, 20);
+  transform: rotate(0deg);
   display: none;
 }
 .copy-text.active button::before,
@@ -793,22 +793,22 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   position: absolute;
   top: -30px;
   right: 0px;
-  background: rgb(156, 90, 20, 0.5);
+  background: rgb(156, 90, 20);
   padding: 4px 14px;
-  border-radius: 20px;
+  border-radius: 4px;
   font-size: 15px;
   display: none;
 }
 .copy-text2 button::after {
   content: "";
   position: absolute;
-  top: -8px;
+  position: absolute;
+  top: -5px;
   right: 25px;
-  width: 8px;
-  height: 18px;
-  border-radius: 0 150px 0 150px;
-  background: rgb(156, 90, 20, 0.4);
-  transform: rotate(45deg);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 16px solid rgb(156, 90, 20);
+  transform: rotate(0deg);
   display: none;
 }
 .copy-text2.active button::before,
