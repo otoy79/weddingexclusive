@@ -28,6 +28,23 @@ body {
     font-family: Baguile;
     src: url(../font/Baguile.otf)
 }
+ .header-logo {
+   position: relative;
+  left: 10px;
+  top: 0;
+    text-align: center;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+ }
+.myLogo {
+  width: 26vw;
+  height: 7vw;
+  padding: 10px;
+  background: linear-gradient(rgba(138, 94, 14, 0.1), rgba(138, 94, 14, 0.1)), url(../img/wlove.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
 #myRoll {
   display: none;
   position: fixed;
