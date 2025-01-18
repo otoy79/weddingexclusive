@@ -7,7 +7,7 @@
    flex:1;
    font-family: Georgia, serif;
    letter-spacing:0.5px;
-   font-size:1.7rem;
+   font-size: 8vw;
    font-weight:700;
    position: relative;
    top: 0;
@@ -84,7 +84,7 @@
   text-align: center;
 }
 .rotating-text-wrapper h2 {
-  font-size: 3.0em;
+  font-size: 10vw;
   margin: 0;
   padding: 0.1em;
   letter-spacing:0.6px;

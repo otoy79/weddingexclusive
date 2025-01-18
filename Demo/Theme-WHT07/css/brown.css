@@ -14,7 +14,7 @@
   text-align: center;
   box-shadow: rgba(63, 224, 242, 0.1) 10px 60px 190px -12px inset, rgba(63, 224, 242, 0.1) 10px 68px 196px -28px inset;
   background-color: rgba(245, 254, 255, 0.9);
-  font-size: 20px;
+  font-size: 6vw;
     -webkit-animation-name: animatetop;
   -webkit-animation-duration: 2.8s;
   animation-name: animatetop;
@@ -30,6 +30,7 @@
   background: linear-gradient(rgba(193, 245, 241, 0.0), rgba(193, 245, 241, 0.3)), url(../img/heart-frame.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+   border-radius: 5%;
 }
  .wel-content {
   position: relative;
@@ -60,7 +61,7 @@
 }
 .close-wel {
   color: #043c42;
-  font-size: 13px;
+  font-size: 3.5vw;
   padding: 8px 30px;
   border-radius: 6px;
   background: rgba(78, 191, 204, 0.3);
@@ -80,7 +81,7 @@
   left: 0;
   bottom: 0;
   text-align: center;
-  margin: 10vw auto;
+  margin: 12vw auto;
 }
 .welcome p {
   margin:0;
