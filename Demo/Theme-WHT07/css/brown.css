@@ -1,10 +1,9 @@
  .welcome {
   position: fixed; 
   z-index: 999;
-  padding-top: 0px; 
+  padding-top: 0; 
   text-align: center;
   color: #043c42;
-  letter-spacing: 0px;
   font-family: cursive;
   font-weight: normal;
   left: 0;
@@ -23,19 +22,16 @@
 }
 .item-welcome {
   width: 60vw;
-  margin: 3px auto;
-  padding-top: 5px;
-  margin-bottom: 50px;
+  margin: 3vw auto;
   padding: 25px;
   background: rgba(122, 122, 118, 0.6);
   text-align: center;
-  border-radius: 10px;
   background: linear-gradient(rgba(193, 245, 241, 0.0), rgba(193, 245, 241, 0.3)), url(../img/borders.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
  .wel-content {
-  margin: 0px auto;
+  margin: 0 auto;
   width: 52vw;
   height: 52vw;
   background: linear-gradient(rgba(64, 227, 245, 0.0), rgba(64, 227, 245, 0.2)), url(../poto/adam3.jpeg);
@@ -79,12 +75,12 @@
   width: 100%; 
   position: relative; 
   left: 0;
-  bottom: -0px;
+  bottom: 0;
   text-align: center;
-  padding-bottom: 4px;
+  margin: 15vw auto;
 }
 .welcome p {
-  margin:0px;
+  margin:0;
  }
 
 
