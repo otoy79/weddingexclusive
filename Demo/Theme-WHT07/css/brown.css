@@ -16,6 +16,16 @@
   box-shadow: rgba(63, 224, 242, 0.1) 10px 60px 190px -12px inset, rgba(63, 224, 242, 0.1) 10px 68px 196px -28px inset;
   background-color: rgba(245, 254, 255, 0.9);
   font-size: 14px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
     -webkit-animation-name: animatetop;
   -webkit-animation-duration: 2.8s;
   animation-name: animatetop;
@@ -47,7 +57,7 @@
 }
 
 .wel-body {
- top: 18vw ; 
+ top: 7vw ; 
   left: 50%;
     transform: translate(-50%, 0);
 margin: 0px;
