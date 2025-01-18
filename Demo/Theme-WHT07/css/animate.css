@@ -72,7 +72,7 @@
 
 .rotating-text-wrapper {
   position: absolute;
-   bottom: 45%;
+   bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
   width:100%;
