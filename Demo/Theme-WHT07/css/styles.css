@@ -1267,29 +1267,3 @@ box-shadow: inset -2px -0.5px 132px 16.5px rgb(29, 54, 52, 0.4) ;
 }
 
 
-main, .forum-content {
-  width: 100%;
-  max-width: 300px;
-  margin: 20px auto;
-}
-
-.nav-toggle, .morelink {
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: .8em;
-    letter-spacing: .1em;
-    outline: 0;
-    color: dodgerblue;
-}
-.remaining-content span {
-    display:none;
-}
-
-.expandable {
-      transition: height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 150ms;
-}
-
-
-
