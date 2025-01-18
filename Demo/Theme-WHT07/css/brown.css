@@ -1,7 +1,7 @@
  .welcome {
   position: fixed; 
   z-index: 999;
-  padding-top: 30px; 
+  padding-top: 0px; 
   text-align: center;
   color: #043c42;
   letter-spacing: 0px;
@@ -11,25 +11,28 @@
   top: 0;
   width: 100%; 
   height: 100%; 
-  overflow: auto; 
   overflow-x: hidden; 
+  text-align: center;
   box-shadow: rgba(63, 224, 242, 0.1) 10px 60px 190px -12px inset, rgba(63, 224, 242, 0.1) 10px 68px 196px -28px inset;
   background-color: rgba(245, 254, 255, 0.9);
-  font-size: 14px;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  font-size: 20px;
     -webkit-animation-name: animatetop;
   -webkit-animation-duration: 2.8s;
   animation-name: animatetop;
   animation-duration: 2.8s
+}
+.item-welcome {
+  width: 60vw;
+  margin: 3px auto;
+  padding-top: 5px;
+  margin-bottom: 50px;
+  padding: 25px;
+  background: rgba(122, 122, 118, 0.6);
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(rgba(193, 245, 241, 0.0), rgba(193, 245, 241, 0.3)), url(../img/borders.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
  .wel-content {
   margin: 0px auto;
@@ -38,50 +41,31 @@
   background: linear-gradient(rgba(64, 227, 245, 0.0), rgba(64, 227, 245, 0.2)), url(../poto/adam3.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 2.8s;
-  animation-name: animatetop;
-  animation-duration: 2.8s
 }
 
 .wel-body {
- top: 7vw ; 
+ top: -10vw ; 
   left: 50%;
-    transform: translate(-50%, 0);
-margin: 0px;
+  transform: translate(-50%, 0);
+  margin: 0px;
   width: 98vw;
   height: 98vw;
   position: absolute;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   background: linear-gradient(rgba(156, 90, 20, 0.0), rgba(156, 90, 20, 0.0)), url(../img/love.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .close-wel {
-  color: #043c42;;
-  font-size: 12px;
-  font-weight: bold;
+  color: #043c42;
+  font-size: 13px;
   padding: 8px 30px;
   border-radius: 6px;
   background: rgba(78, 191, 204, 0.3);
-  margin-bottom: -104px;
+  
 }
 
 .close-wel:hover,
@@ -95,13 +79,12 @@ margin: 0px;
   width: 100%; 
   position: relative; 
   left: 0;
-  bottom: -50px;
+  bottom: -0px;
   text-align: center;
   padding-bottom: 4px;
 }
-.welcome h2 {
-  margin:8px;
-  margin-bottom:28px;
+.welcome p {
+  margin:0px;
  }
 
 
