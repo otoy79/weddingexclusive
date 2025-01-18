@@ -1,6 +1,6 @@
 
 #txtWel{
-  margin: 8vw;
+  margin: 7vw;
    display:flex;
    align-items:center;
    justify-content:center;
@@ -72,7 +72,7 @@
 
 .rotating-text-wrapper {
   position: absolute;
-   bottom: 0;
+   bottom: 10vw;
   left: 50%;
   transform: translate(-50%, 0);
   width:100%;
