@@ -14,10 +14,10 @@
    transform-style:preserve-3d;
    perspective:200px;
    -webkit-transform-style:preserve-3d;
-   -webkit-perspective:200px;
+   -webkit-perspective: 100vw;
 }
 #txtWel>b{
-   height:2.0rem;
+   height: 10vw;
    box-shadow:0 .4rem .3rem -.3rem #aaa;
    color:#979c9f;
    background:linear-gradient(#aaf,#acf,#afc);
