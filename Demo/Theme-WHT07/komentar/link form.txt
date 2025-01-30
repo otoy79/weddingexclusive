@@ -1,0 +1,14 @@
+Link form Ori
+
+  https://docs.google.com/forms/d/e/1FAIpQLSdmrHoaFogKpGsBRPoLTrrAR0bHLx0v19Mfzug7F5hEXlgBcA/viewform?usp=header
+
+
+LINK APPS SRIPT
+
+https://script.google.com/macros/s/AKfycbxGdp0Lz6E8qM82I12n__XSL83W8vE6ntgVRR-v4NHJbObvj4Xxr2W02K7FtYfk4T0l/exec
+
+
+EMBED COMENT
+
+ <div class="powr-comments" id="11bfb5b3_1737204421"></div><script src="https://www.powr.io/powr.js?platform=google"></script>
+
