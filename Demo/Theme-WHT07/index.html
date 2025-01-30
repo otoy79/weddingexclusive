@@ -469,16 +469,13 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
      
    <!-- EDIT BOX COMMENT FORM 🔴 -->
   <div class="comment-wrapper">
-   
-<input placeholder="Nama kamu" id="name-com" type="text"><textarea placeholder="Tulis Ucapan do'a terbaik..." id="comment-com" type="text"></textarea><button class="submit-comment">Kirim</button></div>
-
+    <button class="button-komen"><a href="komentar/WHT07-Comment.html">Kirim Komentar</a></button>
   <div class="comments-counter">
 <p>Komentar</p><span class="counter-coment"></span></div>
 <section class ="field-comments"></section>
     
 </div>
 </div>
-
 
 
     <!-- EDIT BOX COMMENT❌ -->
@@ -582,7 +579,7 @@ function hideComments() {
 if ($('.comment').length>(hiddenNumber-1)) {
 let comments = $('.comment')
 for (i=0;i<comments.length;i++) {let index = [i];if(index>(hiddenNumber-1)) {comments[i].classList.add('hidden')}}
-  $('.field-comments').append('<a class="show-more" onclick="showMore()">Lihat Semua Komentar</a>')
+  $('.field-comments').append('<a class="show-more" onclick="showMore()"> Semua Komentar</a>')
 }
   }
 
