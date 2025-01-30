@@ -468,12 +468,41 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
     <button style="display:none" id="myBtnn" >Send Comment</button>
      
    <!-- EDIT BOX COMMENT FORM 🔴 -->
-  <div class="comment-wrapper">
-    <button class="button-komen"><a href="komentar/WHT07-Comment.html">Kirim Komentar</a></button>
+ <form class="comment-wrapper" action="https://docs.google.com/forms/d/e/1FAIpQLSdmrHoaFogKpGsBRPoLTrrAR0bHLx0v19Mfzug7F5hEXlgBcA/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+   
+    <!-- Field type: "paragraph" id: "1472072275" -->
+ <div class="com">
+    <fieldset>
+        <legend for="1472072275">Name</legend>
+        
+            <textarea id="882527044" name="entry.882527044" placeholder="Tulis namamu" class="name-com" ></textarea>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "paragraph" id: "2126176913" -->
+   <div class="com">
+    <fieldset>
+        <legend for="2126176913">Comment</legend>
+       
+            <textarea id="653328471" name="entry.653328471" placeholder="Tulis Ucapan do'a terbaik..." class="comment-com" ></textarea>
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-9061770644177754875">
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="submit-comment" type="submit" value="Kirim">
+</form>
+  
   <div class="comments-counter">
 <p>Komentar</p><span class="counter-coment"></span></div>
 <section class ="field-comments"></section>
-    
+
 </div>
 </div>
 
@@ -506,89 +535,9 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami:</p>
  
 
 
-  <!-- C0MENT Form Edit 🔴 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-<script>
-function filterArray(array) {
-    return $.grep(array, function(element) {
-        return element !== null && element !== undefined && element.length !== 0;
-    });
-}
-$('.submit-comment').click(function(e) {
-    let name = $('#name-com').val()
-let comment = $('#comment-com').val()
-if (name.length>3&&comment.length>3) {
-  $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Just now</i><p class="comment-text">${comment}</p></div>`)
-name = encodeURI(name)
-  comment = encodeURI(comment)
-$.post('https://docs.google.com/forms/d/e/1FAIpQLSdmrHoaFogKpGsBRPoLTrrAR0bHLx0v19Mfzug7F5hEXlgBcA/formResponse?usp=pp_url&entry.882527044='+name+'&entry.653328471='+comment+'' );
-   $('.counter-coment').text( $('.counter-coment').text()*1+1)
-  $('.comment-wrapper').append('<p class="comment-text">Komentar Anda tersimpan</p>')
-  $('#name-com').hide()
-  $('#comment-com').hide()
-  $('.submit-comment').hide()
-}
-})
-fetch('https://script.google.com/macros/s/AKfycbxGdp0Lz6E8qM82I12n__XSL83W8vE6ntgVRR-v4NHJbObvj4Xxr2W02K7FtYfk4T0l/exec').then(function (response) {
- return response.json();
-}).then(function (json) {
-
-let comments = json
-delete comments[0]
-jQuery.each( comments, function( i, val ) {
-if(val!==undefined) {
-val = filterArray(val)
-}
-  if(val!==undefined&&val.length===3) {
-  
-    $('.counter-coment').text(comments.length - 1)
-    const digitMonths = {
-  1: 'Jan',
-2: 'Feb',
-      3: 'Mar',
-      4: 'Apr',
-      5: 'Mei',
-      6: 'Jun',
-      7: 'Jul',
-      8: 'Ags',
-      9: 'Sep',
-      10: 'Okt',
-      11: 'Nov',
-      12: 'Des',
-};
-  let hh = new Date(val[0]).getHours()*1
-  if(hh<10) {hh='0'+hh}
-  let mm = new Date(val[0]).getMinutes()*1
-  if(mm<10) {mm='0'+mm}
-  let dd = new Date(val[0]).getDate()*1
-  if(dd<10) {dd='0'+dd}
-    let time = hh+':'+mm+', '+ dd+' '+digitMonths[new Date(val[0]).getMonth()+1]+' ' + new Date(val[0]).getFullYear(),
-        name = val[1],
-        comment = val[2]
-    $('.field-comments').prepend(`<div class="comment"><p class="comment-name">${name} </p><i>${time}</i><p class="comment-text">${comment}</p></div>`)}
-
-});
-hideComments()
-}).catch(function (err) {
- console.warn('Something went wrong.', err);
-});
-
-function hideComments() {
-  let hiddenNumber = 5
-if ($('.comment').length>(hiddenNumber-1)) {
-let comments = $('.comment')
-for (i=0;i<comments.length;i++) {let index = [i];if(index>(hiddenNumber-1)) {comments[i].classList.add('hidden')}}
-  $('.field-comments').append('<a class="show-more" onclick="showMore()"> Semua Komentar</a>')
-}
-  }
-
-function showMore() {
-  $('.comment').removeClass('hidden')
-  $('.show-more').hide()
-}
-</script>
-
+  <!-- C0MENT JS 🔴 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
 
 <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
