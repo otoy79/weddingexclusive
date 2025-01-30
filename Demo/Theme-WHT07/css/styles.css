@@ -1266,6 +1266,20 @@ box-shadow: inset -2px -0.5px 132px 16.5px rgb(29, 54, 52, 0.4) ;
    -webkit-box-shadow: -2px 1px 4px 0.2px #8fb8b5, 4px 1px 10px 4px #8fb8b5;
   box-shadow: -4px 1px 10px 0.2px #8fb8b5, 3px 1px 10px 0.2px #8fb8b5;
 }
+.button-komen{
+  padding: 4px 16px;
+  background:rgba(23, 153, 179, 0.8);
+  border-radius: 6px;
+}
+ button a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+button a:visited {
+  text-decoration: none;
+  color: #fff;
+}
 .comment-wrapper {
   background:rgba(23, 153, 179, 0.1);
   margin-top: 13px;
@@ -1288,7 +1302,7 @@ box-shadow: inset -2px -0.5px 132px 16.5px rgb(29, 54, 52, 0.4) ;
   font-family: 'Aeroport';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: 16px;
 color: #0c4559;
   margin: 0;
 }
