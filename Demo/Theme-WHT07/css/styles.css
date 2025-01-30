@@ -1280,10 +1280,14 @@ button a:visited {
   text-decoration: none;
   color: #fff;
 }
+fieldset {
+  border: 0.2px solid #0c4559;
+  margin: 0px;
+}
 .comment-wrapper {
   background:rgba(23, 153, 179, 0.1);
   margin-top: 13px;
-  max-width: 87%;
+  max-width: 99%;
   border: 0.5px solid #0c4559;
   color: #0c4559;
   padding: 15px;
@@ -1302,7 +1306,7 @@ button a:visited {
   font-family: 'Aeroport';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 18px;
 color: #0c4559;
   margin: 0;
 }
@@ -1321,7 +1325,7 @@ border-radius: 7px;
   margin:0px;
   margin-top:20px;
 }
-#name-com {
+.name-com {
   font-family: 'Aeroport';
 font-style: normal;
 font-weight: 400;
@@ -1336,10 +1340,10 @@ border-radius: 9px;
   margin-bottom:20px;
   width:90%;
 }
-#name-com:placeholder {
+.name-com:placeholder {
   color: #8C8989;
 }
-#comment-com{
+ .comment-com{
   width:90%;
     font-family: 'Aeroport';
 font-style: normal;
@@ -1355,11 +1359,11 @@ border-radius: 9px;
   margin-bottom:20px;
   resize:none;
 }
-#comment:focus {
+.comment:focus {
   resize:auto;
 }
 .submit-comment {
-  font-family: 'Aeroport';
+  margin-top: 10px;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
@@ -1377,7 +1381,8 @@ border-radius: 4px;
   transform:translateY(-2px);
 }
 .field-comments {
-  margin-top:0px;
+  margin-top:5px;
+  font-size: 12px;
 }
 .comment-name {
   font-family: 'Aeroport';
@@ -1388,7 +1393,7 @@ font-size: 15px;
 }
 .comment {
   background:rgba(23, 153, 179, 0.1);
-  max-width:90%;
+  max-width:99%;
   display:flex;
   flex-wrap:wrap;
   align-items:center;
@@ -1440,6 +1445,5 @@ animation: new-comment 2s linear forwards;
   0% {background: rgba(242, 119, 205, 0.6);}
   100%{background:rgba(242, 119, 205, 0.2);}
 }
-
 
 
