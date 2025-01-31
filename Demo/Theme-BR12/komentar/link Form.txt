@@ -1,0 +1,13 @@
+  Link Ori
+  https://docs.google.com/forms/d/e/1FAIpQLSfYAxWAYDWZmuvDPfzsMOd6W8Ey44Fuhmv8x1zcb_zzaJwTdA/viewform?usp=header
+
+
+
+Link Apps Script
+
+https://script.google.com/macros/s/AKfycbwG-zj-k8cXZltgw8Kcr61Xvq7cpdOcDGoFx_FkC84w2m01aix33ANlJ92jj-m9P4U0EA/exec
+
+
+ Google Form Reponse
+
+https://docs.google.com/forms/d/e/1FAIpQLSfYAxWAYDWZmuvDPfzsMOd6W8Ey44Fuhmv8x1zcb_zzaJwTdA/formResponse?usp=pp_url&entry.1210540782='+name+'&entry.2145858456='+comment+
