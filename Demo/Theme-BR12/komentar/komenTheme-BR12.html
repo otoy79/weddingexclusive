@@ -121,8 +121,20 @@ border-radius: 4px;
 .comment-name {
 font-style: normal;
 font-weight: 700;
-font-size: 15px;
+font-size: 14px;
 }
+.comment-name::before {
+  margin-right: 10px;
+  content: ' ';
+  color: #fff;
+  border: 0.1px solid #555;
+  padding: 0px 8px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(242, 242, 242, 0.3), rgba(168, 168, 158, 0.6)), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTIyNCAyNTZBMTI4IDEyOCAwIDEgMCAyMjQgMGExMjggMTI4IDAgMSAwIDAgMjU2em0tNDUuNyA0OEM3OS44IDMwNCAwIDM4My44IDAgNDgyLjNDMCA0OTguNyAxMy4zIDUxMiAyOS43IDUxMmwzODguNiAwYzE2LjQgMCAyOS43LTEzLjMgMjkuNy0yOS43QzQ0OCAzODMuOCAzNjguMiAzMDQgMjY5LjcgMzA0bC05MS40IDB6Ii8+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+  
 .comment {
   background:rgba(166, 104, 12, 0.5);
  .font-family: Baguile;
@@ -172,8 +184,8 @@ color: #eee;
 animation: new-comment 2s linear forwards;
 }
 @keyframes new-comment {
-  0% {background: rgba(242, 119, 205, 0.6);}
-  100%{background:rgba(242, 119, 205, 0.2);}
+  0% {background: rgba(138, 6, 34, 0.6);}
+  100%{background:rgba(138, 6, 34, 0.4);}
 }
 .comment-body {
   width:100%;
@@ -186,70 +198,76 @@ animation: new-comment 2s linear forwards;
 </head>
 <body style="padding:2px">
 
- 
-  <form class="comment-wrapper" action="https://docs.google.com/forms/d/e/1FAIpQLSfYAxWAYDWZmuvDPfzsMOd6W8Ey44Fuhmv8x1zcb_zzaJwTdA/formResponse"
-      target="_self"
-      id="bootstrapForm"
-      method="POST">
- 
-    <!-- Field type: "paragraph" id: "1587060707" -->
+
+<form class="comment-wrapper" id="bootstrapForm">
+  <div class="com2">
+    <fieldset>
+      <legend for="1587060707">Name</legend>
+      <textarea id="1210540782" name="entry.1210540782" placeholder="Nama kamu" class="name-com"></textarea>
+    </div>
+  </fieldset>
   <div class="com">
     <fieldset>
-        <legend for="1587060707">Name</legend>
-       
-            <textarea id="1210540782" placeholder="Tulis namamu" name="entry.1210540782" class="name-com" ></textarea>
-       </div>
-    </fieldset>
- 
-  
-
-    <!-- Field type: "paragraph" id: "1425466525" -->
-  <div class="com">
-    <fieldset>
-        <legend for="1425466525">Comment</legend>
-        
-            <textarea id="2145858456" placeholder="Tulis Ucapan do'a terbaik..." name="entry.2145858456" class="comment-com"" ></textarea>
-      </div>
-    </fieldset>
- 
-
-    <input type="hidden" name="fvv" value="1">
-    <input type="hidden" name="fbzx" value="-8040607710604397670">
-  
-    <input type="hidden" name="pageHistory" value="0">
-
-    <input class="submit-comment" type="submit" value="KIRIM">
+      <legend for="1425466525">Comment</legend>
+      <textarea id="2145858456" name="entry.2145858456" placeholder="Tulis Ucapan do'a terbaik..." class="comment-com"></textarea>
+    </div>
+  </fieldset>
+  <input type="hidden" name="fvv" value="1">
+  <input type="hidden" name="fbzx" value="8040607710604397670">
+  <input type="hidden" name="pageHistory" value="0">
+  <input class="submit-comment" type="submit" value="Submit">
 </form>
 
-  
- <div class="comments-counter">
-<p>Komentar</p><span class="counter-coment"></span></div>
-  <div class="comment-body">
-<section class ="field-comments">
-</section>
+<div class="comments-counter">
+  <p>Komentar</p>
+  <span class="counter-coment"></span>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<div class="comment-body">
+  <section class="field-comments"></section>
+</div>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
 
 <script>
-$('#bootstrapForm').submit(function (event) {
-    event.preventDefault()
-    var extraData = {}
-    $('#bootstrapForm').ajaxSubmit({
-        data: extraData,
-        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-        error: function () {
-            // Submit of form should be successful but JSONP callback will fail because Google Forms
-            // does not support it, so this is handled as a failure.
-         //   alert('Form Submitted. Thanks.')
-            // You can also redirect the user to a custom thank-you page:
-            // window.location = 'http://www.mydomain.com/thankyoupage.html'
-        }
-    })
-})
+  $(document).ready(function() {
+    $('#bootstrapForm').submit(function(event) {
+      event.preventDefault();
+      var name = $('#1210540782').val();
+      var comment = $('#2145858456').val();
+      
+      if (name.length > 3 && comment.length > 3) {
+        // Kirim data ke Google Forms
+        $.ajax({
+          type: 'POST',
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSfYAxWAYDWZmuvDPfzsMOd6W8Ey44Fuhmv8x1zcb_zzaJwTdA/formResponse',
+          data: {
+            'entry.1210540782': name,
+            'entry.2145858456': comment
+          },
+          success: function() {
+            // Tambahkan komentar baru ke dalam elemen .field-comments
+            $('.field-comments').append('<div class="comment"><p class="comment-name">' + name + '</p><p class="comment-text">' + comment + '</p></div>');
+            // Update counter komentar
+            var counter = parseInt($('.counter-coment').text()) + 1;
+            $('.counter-coment').text(counter);
+            // Reset form
+            $('#bootstrapForm')[0].reset();
+          },
+          error: function() {
+            alert('Komentar Tersimpan!');
+          }
+        });
+      } else {
+        alert('Nama dan komentar harus diisi!');
+      }
+    });
+  });
+
 
 function filterArray(array) {
     return $.grep(array, function(element) {
@@ -262,14 +280,10 @@ let comment = $('#2145858456').val()
 if (name.length>3&&comment.length>3) {
   $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Just now</i><p class="comment-text">${comment}</p></div>`)
 
-   $('.counter-coment').text( $('.counter-coment').text()*1+1)
-  $('.comment-wrapper').append('<p class="comment-text">Komentar Anda tersimpan</p>')
   $('.com').hide()
-  $('.com').hide()
+  $('.com2').hide()
   $('.submit-comment').hide()
-   $(".submit-comment").each(function() { 
-    alert("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!! Terima Kasih..!"); 
-});
+  alert("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!! Terima Kasih..!"); 
 }
 })
 fetch('https://script.google.com/macros/s/AKfycbwG-zj-k8cXZltgw8Kcr61Xvq7cpdOcDGoFx_FkC84w2m01aix33ANlJ92jj-m9P4U0EA/exec').then(function (response) {
@@ -329,6 +343,7 @@ function showMore() {
   $('.comment').removeClass('hidden')
   $('.show-more').hide()
 }
+
 </script>
 
 </body>
