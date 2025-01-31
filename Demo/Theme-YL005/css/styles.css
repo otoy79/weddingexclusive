@@ -15,6 +15,14 @@ body {
 box-shadow: rgba(163, 119, 15, 0.2) 0px 30px 60px -12px inset, rgba(163, 119, 15, 0.2) 0px 48px 86px -18px inset;
   background: rgba(255, 254, 242, 0.9);
 }
+#iframe {
+  width: 97%;
+  height: 680px;
+   border:none;
+   margin:0; 
+   overflow: hidden;
+  padding-bottom:15px;
+}
 @font-face {
     font-family: LPMQ;
     src: url(../font/LPMQ.ttf)
