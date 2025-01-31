@@ -120,8 +120,20 @@ border-radius: 4px;
 .comment-name {
 font-style: normal;
 font-weight: 700;
-font-size: 15px;
+font-size: 14px;
 }
+.comment-name::before {
+  margin-right: 10px;
+  content: ' ';
+  color: #fff;
+  border: 0.1px solid #555;
+  padding: 0px 8px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(242, 242, 242, 0.3), rgba(168, 168, 158, 0.6)), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTIyNCAyNTZBMTI4IDEyOCAwIDEgMCAyMjQgMGExMjggMTI4IDAgMSAwIDAgMjU2em0tNDUuNyA0OEM3OS44IDMwNCAwIDM4My44IDAgNDgyLjNDMCA0OTguNyAxMy4zIDUxMiAyOS43IDUxMmwzODguNiAwYzE2LjQgMCAyOS43LTEzLjMgMjkuNy0yOS43QzQ0OCAzODMuOCAzNjguMiAzMDQgMjY5LjcgMzA0bC05MS40IDB6Ii8+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+  
 .comment {
   background:rgba(166, 104, 12, 0.5);
  .font-family: Baguile;
@@ -185,69 +197,76 @@ animation: new-comment 2s linear forwards;
 </head>
 <body style="padding:2px">
 
- 
 
-  <form class="comment-wrapper"  action="https://docs.google.com/forms/d/e/1FAIpQLSdhWXFhiCxLfO7LQxXUehWP7cEbifAWJci5MrPDraV6YZN6vA/formResponse"
-      target="_self"
-      id="bootstrapForm"
-      method="POST">
-    
-    <!-- Field type: "paragraph" id: "664290779" -->
+<form class="comment-wrapper" id="bootstrapForm">
   <div class="com2">
     <fieldset>
-        <legend for="664290779">Name</legend>
-       
-            <textarea id="1959968627" name="entry.1959968627" class="name-com" ></textarea>
-        </div>
-    </fieldset>
-
-
-    <!-- Field type: "paragraph" id: "614556993" -->
+      <legend for="664290779">Name</legend>
+      <textarea id="1959968627" name="entry.1959968627" placeholder="Nama kamu" class="name-com"></textarea>
+    </div>
+  </fieldset>
   <div class="com">
     <fieldset>
-        <legend for="614556993">Comment</legend>
-       
-            <textarea id="1508777600" name="entry.1508777600" class="comment-com" ></textarea>
-        </div>
-    </fieldset>
-
-    <input type="hidden" name="fvv" value="1">
-    <input type="hidden" name="fbzx" value="1670909718783986431">
-   
-    <input type="hidden" name="pageHistory" value="0">
-
-    <input class="submit-comment" type="submit" value="Submit">
+      <legend for="614556993">Comment</legend>
+      <textarea id="1508777600" name="entry.1508777600" placeholder="Tulis Ucapan do'a terbaik..." class="comment-com"></textarea>
+    </div>
+  </fieldset>
+  <input type="hidden" name="fvv" value="1">
+  <input type="hidden" name="fbzx" value="1670909718783986431">
+  <input type="hidden" name="pageHistory" value="0">
+  <input class="submit-comment" type="submit" value="Submit">
 </form>
 
-  <div class="comments-counter">
-<p>Komentar</p><span class="counter-coment"></span></div>
-  <div class="comment-body">
-<section class ="field-comments">
-</section>
+<div class="comments-counter">
+  <p>Komentar</p>
+  <span class="counter-coment"></span>
+</div>
+
+<div class="comment-body">
+  <section class="field-comments"></section>
 </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
 
 <script>
-$('#bootstrapForm').submit(function (event) {
-    event.preventDefault()
-    var extraData = {}
-    $('#bootstrapForm').ajaxSubmit({
-        data: extraData,
-        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-        error: function () {
-            // Submit of form should be successful but JSONP callback will fail because Google Forms
-            // does not support it, so this is handled as a failure.
-           // alert('Form Submitted. Thanks.')
-            // You can also redirect the user to a custom thank-you page:
-            // window.location = 'https://weddingexclusive.pages.dev/Demo/Theme-YL005/'
-        }
-    })
-})
+  $(document).ready(function() {
+    $('#bootstrapForm').submit(function(event) {
+      event.preventDefault();
+      var name = $('#1959968627').val();
+      var comment = $('#1508777600').val();
+      
+      if (name.length > 3 && comment.length > 3) {
+        // Kirim data ke Google Forms
+        $.ajax({
+          type: 'POST',
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSdhWXFhiCxLfO7LQxXUehWP7cEbifAWJci5MrPDraV6YZN6vA/formResponse',
+          data: {
+            'entry.1959968627': name,
+            'entry.1508777600': comment
+          },
+          success: function() {
+            // Tambahkan komentar baru ke dalam elemen .field-comments
+            $('.field-comments').append('<div class="comment"><p class="comment-name">' + name + '</p><p class="comment-text">' + comment + '</p></div>');
+            // Update counter komentar
+            var counter = parseInt($('.counter-coment').text()) + 1;
+            $('.counter-coment').text(counter);
+            // Reset form
+            $('#bootstrapForm')[0].reset();
+          },
+          error: function() {
+            alert('Komentar Tersimpan!');
+          }
+        });
+      } else {
+        alert('Nama dan komentar harus diisi!');
+      }
+    });
+  });
+
 
 function filterArray(array) {
     return $.grep(array, function(element) {
@@ -259,11 +278,7 @@ $('.submit-comment').click(function(e) {
 let comment = $('#1508777600').val()
 if (name.length>3&&comment.length>3) {
   $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Just now</i><p class="comment-text">${comment}</p></div>`)
-name = encodeURI(name)
-  comment = encodeURI(comment)
-$.post('https://docs.google.com/forms/d/e/1FAIpQLSdhWXFhiCxLfO7LQxXUehWP7cEbifAWJci5MrPDraV6YZN6vA/formResponse?usp=pp_url&entry.1508777600='+name+'&entry.1959968627='+comment+'' );
-   $('.counter-coment').text( $('.counter-coment').text()*1+1)
-  $('.comment-wrapper').append('<p class="comment-text">Komentar Anda tersimpan</p>')
+
   $('.com').hide()
   $('.com2').hide()
   $('.submit-comment').hide()
