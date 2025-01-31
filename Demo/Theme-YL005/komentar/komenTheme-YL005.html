@@ -193,7 +193,7 @@ animation: new-comment 2s linear forwards;
       method="POST">
     
     <!-- Field type: "paragraph" id: "664290779" -->
-  <div class="com">
+  <div class="com2">
     <fieldset>
         <legend for="664290779">Name</legend>
        
@@ -259,16 +259,15 @@ $('.submit-comment').click(function(e) {
 let comment = $('#1508777600').val()
 if (name.length>3&&comment.length>3) {
   $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Just now</i><p class="comment-text">${comment}</p></div>`)
-
-        
+name = encodeURI(name)
+  comment = encodeURI(comment)
+$.post('https://docs.google.com/forms/d/e/1FAIpQLSdhWXFhiCxLfO7LQxXUehWP7cEbifAWJci5MrPDraV6YZN6vA/formResponse?usp=pp_url&entry.1508777600='+name+'&entry.1959968627='+comment+'' );
    $('.counter-coment').text( $('.counter-coment').text()*1+1)
   $('.comment-wrapper').append('<p class="comment-text">Komentar Anda tersimpan</p>')
   $('.com').hide()
-  $('.com').hide()
+  $('.com2').hide()
   $('.submit-comment').hide()
-   $(".submit-comment").each(function() { 
-    alert("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!! Terima Kasih..!"); 
-});
+  alert("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!! Terima Kasih..!"); 
 }
 })
 fetch('https://script.google.com/macros/s/AKfycbw635fLLhVHYhW1Um9r1IlnwcS4Er7hmzHNhVAmeFCFRJLnSTgzo91Y4d8tbZ54U6dK/exec').then(function (response) {
