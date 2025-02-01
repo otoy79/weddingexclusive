@@ -9,6 +9,14 @@ body {
   height: 100%;
   color: #085e59;
 }
+  #iframe {
+  width: 97%;
+  height: 680px;
+   border:none;
+   margin:0; 
+   overflow: hidden;
+  padding-bottom:15px;
+}
 @font-face {
     font-family: LPMQ;
     src: url(../font/LPMQ.ttf)
