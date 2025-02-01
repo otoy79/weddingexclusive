@@ -9,21 +9,23 @@
 <meta itemprop="name" content="The Wedding">
 <meta itemprop="description" content=" Buat Undangan website lebih keren, Wedding Exclusive Digital website, The Wedding Of.  Semple Undangan Gigital">
 <meta itemprop="image" content="https://weddingexclusive.pages.dev/Demo/Theme-WHT07/poto/icon.webp">
-    <style>
+
+ <style>
  body {
   font-size: 14px;
 }
  fieldset {
-  border: 0.2px solid #0c4559;
+  border: 0.2px solid #05292b;
   margin: 0px;
+  color: #111;
 }
 .comment-wrapper {
-  background:rgba(23, 153, 179, 0.1);
-  margin-top: 13px;
+  background:rgba(23, 153, 179, 0.2);
+  margin-top: 2px;
   max-width: 99%;
   border: 0.5px solid #0c4559;
   color: #0c4559;
-  padding: 15px;
+  padding: 5px;
   border-radius: 8px;
 }
 .comments-counter {
@@ -31,46 +33,43 @@
   justify-content: flex-start;
   align-items:center;
 }
- .comments-counter p {
-   margin:0;
-   padding: 18px;
-  }
+ .comments-counter p {margin:0;}
 .comments-counter p{
-  font-family: 'Aeroport';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
-color: #0c4559;
-  margin: 0;
+line-height: 33px;
+color: #4f3207;
 }
 .counter-coment {
-  margin-left:10px;
   font-family: 'Aeroport';
+  margin-left: 5px;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-color: #0c4559;
-  background: #fff;
+line-height: 22px;
+color: #4f3207;
+  background: #EEEDED;
 border-radius: 7px;
   padding: 2px 7px 2px 7px;
 }
 .comments-counter {
-  margin:0px;
   margin-top:20px;
+  margin-bottom:20px;
 }
 .name-com {
   font-family: 'Aeroport';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 10px;
+line-height: 12px;
   color:#000;
-  background:rgba(252, 252, 250, 0.8);
-border-radius: 6px;
+  background: #F2F3F4;
+border-radius: 5px;
   outline:none!important;
   border:none!important;
-  padding: 10px 13px;
-  margin-bottom:2px;
+  padding: 8px 13px;
+  margin: 0px;
   width:90%;
 }
 .name-com:placeholder {
@@ -78,78 +77,85 @@ border-radius: 6px;
 }
  .comment-com{
   width:90%;
-    font-family: 'Aeroport';
+  font-family: 'Aeroport';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 28px;
+line-height: 22px;
   color:#000;
-  background:rgba(252, 252, 250, 0.8);
-border-radius: 6px;
+  background: #F2F3F4;
+border-radius: 5px;
   outline:none!important;
   border:none!important;
   padding: 8px 13px;
-  margin-bottom:2px;
+  margin: 0px;
   resize:none;
 }
 .comment:focus {
   resize:auto;
 }
 .submit-comment {
-  margin-top: 10px;
+  font-family: 'Aeroport';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 19px;
+line-height: 16px;
 text-transform: uppercase;
 color: #FFFFFF;
-  background: #608CFF;
+  background: #1598b3;
 border-radius: 4px;
   border:none!important;
-  padding: 4px 16px;
+  padding: 6px 16px;
   cursor:pointer;
   transition: .3s;
+  margin: 10px;
 }
 .submit-comment:hover {
   transform:translateY(-2px);
 }
 .field-comments {
-  margin-top:5px;
-  font-size: 12px;
+  margin:0px;
 }
 .comment-name {
-  font-family: 'Aeroport';
 font-style: normal;
 font-weight: 700;
-font-size: 15px;
-
+font-size: 14px;
 }
+.comment-name::before {
+  margin-right: 10px;
+  content: ' ';
+  color: #fff;
+  border: 0.1px solid #555;
+  padding: 0px 8px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(242, 242, 242, 0.3), rgba(168, 168, 158, 0.6)), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTIyNCAyNTZBMTI4IDEyOCAwIDEgMCAyMjQgMGExMjggMTI4IDAgMSAwIDAgMjU2em0tNDUuNyA0OEM3OS44IDMwNCAwIDM4My44IDAgNDgyLjNDMCA0OTguNyAxMy4zIDUxMiAyOS43IDUxMmwzODguNiAwYzE2LjQgMCAyOS43LTEzLjMgMjkuNy0yOS43QzQ0OCAzODMuOCAzNjguMiAzMDQgMjY5LjcgMzA0bC05MS40IDB6Ii8+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+  
 .comment {
-  background:rgba(23, 153, 179, 0.1);
+  background:rgba(23, 153, 179, 0.2);
+ .font-family: Baguile;
   max-width:99%;
   display:flex;
   flex-wrap:wrap;
   align-items:center;
   justify-content: space-between;
-  margin-bottom:10px;
-  padding: 8px;
-  -webkit-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.25);
--moz-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.25);
-box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.25);
+  margin-bottom:13px;
+  padding: 10px;
+  -webkit-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
+-moz-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
+box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
 }
-  .comment p {
-  margin: 0px;
-  padding: 4px 12px;
-}
-
+  .comment p {margin: 0px}
+    .comment p {padding: 8px}
 .comment-text  {
   flex-basis:100%;
-  font-family: 'Aeroport';
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
 margin-top: 9px;
-color: #0c4559;
+color: #05292b;
   background:rgba(252, 252, 250, 0.9);
    padding: 4px 10px;
 }
@@ -159,92 +165,107 @@ font-style: normal;
 font-weight: 400;
 font-size: 12px;
 position:relative;
-color: #437e94;
+color: #187b8f;
 }
-.comment i::before {
+  .comment i::before {
   left:-28px;
   top:-1px;
   position:absolute;
   content: '';
-  width:13px;
-  height:13px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='512' height='512' x='0' y='0' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512' xml:space='preserve' class=''%3E%3Cg%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath d='M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978 c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952 C357.766,320.208,355.981,307.775,347.216,301.211z' fill='%23939393' data-original='%23939393' class=''%3E%3C/path%3E%3C/g%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath d='M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341 c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341 S375.275,472.341,256,472.341z' fill='%23939393' data-original='%23939393' class=''%3E%3C/path%3E%3C/g%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3Cg xmlns='http://www.w3.org/2000/svg'%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  width:12px;
+  height:12px;
+  color: #fff;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAABHNCSVQICAgIfAhkiAAAAyhJREFUSImtlsFrG0cUxn9vVk6FwYIGKvmmnNIeCqZEJvSSLrQXpTi36S4JFBdcg5NDT6b/Q33KIRiU+lBKgtd7MLTEl+agBNKQ2j44p7ZgqG+WSjH4YIKkndeDRrFwKsk0+k6zM2/eN29m3/ueMARhGOZLpdKciHwOVIAyMAmcAAfAjqo+ajQaP9fr9VeD/Mh/TS4uLk4cHx9/AywDxb6ltieYBCb65pvASqFQuFur1dojSaIouiwiG8CMqqqIPAYeZln2JE3TA8ABxlpbDoLgE+Cmqn4mIgLsZVkWpWn6x0CSOI6vAlvARWBXVZeSJNkedA19B5sVkVXgCnAEVNfX11+8QeIjeA5cVNU159ztNE1bowh6sNZeMMbcE5EF4CjLso97EQm8foNtf0VrSZIsDDn15SRJ/hyyft8T7RUKhdlardY2AP6RZ4Bd59ztQQ7iOJ4Xkd/jOJ4fZOOcuwPsAjPeLyYMwzywrF0sjbiiEt3oS4MM0jRtqeqSqiqwHIZh3pRKpTmgKCKPz/PI50GSJNv+rywWi8UbxicawMNxEPQgIg8AjDHXDd1MJsuyJ+Mk6XQ6T/2wYuiWirZPtLEhTdO/6FaIsuG0FrlRG51zHT+cj6LowxHmqqonwKThtBaZUSTtdvtHVX0GfAC8iKLoqyHmIiKTwImhW00nrLXlUSSbm5vNRqMRqup3IpIH1qIo+qFarb5z1tZae4luET0wwA6AL3YjUa/XO0mSfOucmxORf0Tky6mpqU/P2uVyuWt+uGNU9ZH/uHkekh42Nja2Wq3WR6r69f7+/i9n11X1FoBzbkvCMMxPT08fqOp7wNVxJGQcxxVV/U1E/j48PCwbr2gr0sWqtfbC2xD4/ateX1bq9forA1AoFO4Ce8AVY8y9tyHx+yvAS+/3VE+ste8HQfAceFdVv3fO3RmXnrzODT9RBY5EZCEIgl+jKJo9D0Ecx5UgCJ71CIBqvwS/ofE+ooQ+jReRB51O56kvFQqItfZSLpe7pqq3+jT+ZZZlXwzV+B6GdSuqeuIz+f93K/0IwzBfLBZvGGOuM6Dvcs5tNZvNn4b1Xf8CYwN/SC62oSIAAAAASUVORK5CYII=");
   background-size:cover!important;
 }
 .new-comment {
 animation: new-comment 2s linear forwards;
 }
 @keyframes new-comment {
-  0% {background: rgba(242, 119, 205, 0.6);}
-  100%{background:rgba(242, 119, 205, 0.2);}
+  0% {background: rgba(138, 6, 34, 0.6);}
+  100%{background:rgba(138, 6, 34, 0.4);}
+}
+.comment-body {
+  width:100%;
+  height:360px;
+  overflow: auto;
 }
 
-</style>
+ </style>
 
 </head>
 <body style="padding:2px">
 
 
-
-
-<form class="comment-wrapper" action="https://docs.google.com/forms/d/e/1FAIpQLSdmrHoaFogKpGsBRPoLTrrAR0bHLx0v19Mfzug7F5hEXlgBcA/formResponse"
-      target="_self"
-      id="bootstrapForm"
-      method="POST">
-   
-    <!-- Field type: "paragraph" id: "1472072275" -->
- <div class="com">
+<form class="comment-wrapper" id="bootstrapForm">
+  <div class="com2">
     <fieldset>
-        <legend for="1472072275">Name</legend>
-        
-            <textarea id="882527044" name="entry.882527044" placeholder="Tulis namamu" class="name-com" ></textarea>
-        </div>
-    </fieldset>
-
-
-    <!-- Field type: "paragraph" id: "2126176913" -->
-   <div class="com">
+      <legend for="1472072275">Name</legend>
+      <textarea id="882527044" name="entry.882527044" placeholder="Nama kamu" class="name-com"></textarea>
+    </div>
+  </fieldset>
+  <div class="com">
     <fieldset>
-        <legend for="2126176913">Comment</legend>
-       
-            <textarea id="653328471" name="entry.653328471" placeholder="Tulis Ucapan do'a terbaik..." class="comment-com" ></textarea>
-        </div>
-    </fieldset>
-
-    <input type="hidden" name="fvv" value="1">
-    <input type="hidden" name="fbzx" value="-9061770644177754875">
-    <input type="hidden" name="pageHistory" value="0">
-
-    <input class="submit-comment" type="submit" value="Kirim">
+      <legend for="2126176913">Comment</legend>
+      <textarea id="653328471" name="entry.653328471" placeholder="Tulis Ucapan do'a terbaik..." class="comment-com"></textarea>
+    </div>
+  </fieldset>
+  <input type="hidden" name="fvv" value="1">
+  <input type="hidden" name="fbzx" value="-9061770644177754875">
+  <input type="hidden" name="pageHistory" value="0">
+  <input class="submit-comment" type="submit" value="Submit">
 </form>
-  
 
-  <div class="comments-counter">
-<p>Komentar</p><span class="counter-coment"></span></div>
-<section class ="field-comments"></section>
+<div class="comments-counter">
+  <p>Komentar</p>
+  <span class="counter-coment"></span>
+</div>
+
+<div class="comment-body">
+  <section class="field-comments"></section>
+</div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
 
 <script>
-$('#bootstrapForm').submit(function (event) {
-    event.preventDefault()
-    var extraData = {}
-    $('#bootstrapForm').ajaxSubmit({
-        data: extraData,
-        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-        error: function () {
-            // Submit of form should be successful but JSONP callback will fail because Google Forms
-            // does not support it, so this is handled as a failure.
-          // alert('Trimakasih atas do`a anda.')
-         
-     // window.history.back(); 
-        }
-    })
-})
+  $(document).ready(function() {
+    $('#bootstrapForm').submit(function(event) {
+      event.preventDefault();
+      var name = $('#882527044').val();
+      var comment = $('#653328471').val();
+      
+      if (name.length > 3 && comment.length > 3) {
+        // Kirim data ke Google Forms
+        $.ajax({
+          type: 'POST',
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSdmrHoaFogKpGsBRPoLTrrAR0bHLx0v19Mfzug7F5hEXlgBcA/formResponse',
+          data: {
+            'entry.882527044': name,
+            'entry.653328471': comment
+          },
+          success: function() {
+            // Tambahkan komentar baru ke dalam elemen .field-comments
+            $('.field-comments').append('<div class="comment"><p class="comment-name">' + name + '</p><p class="comment-text">' + comment + '</p></div>');
+            // Update counter komentar
+            var counter = parseInt($('.counter-coment').text()) + 1;
+            $('.counter-coment').text(counter);
+            // Reset form
+            $('#bootstrapForm')[0].reset();
+          },
+          error: function() {
+            alert('Komentar Tersimpan!');
+          }
+        });
+      } else {
+        alert('Nama dan komentar harus diisi!');
+      }
+    });
+  });
+
 
 function filterArray(array) {
     return $.grep(array, function(element) {
@@ -257,14 +278,10 @@ let comment = $('#653328471').val()
 if (name.length>3&&comment.length>3) {
   $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Just now</i><p class="comment-text">${comment}</p></div>`)
 
-   $('.counter-coment').text( $('.counter-coment').text()*1+1)
-  $('.comment-wrapper').append('<p class="comment-text">Komentar Anda tersimpan</p>')
   $('.com').hide()
-  $('.com').hide()
+  $('.com2').hide()
   $('.submit-comment').hide()
-   $(".submit-comment").each(function() { 
-    alert("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!! Terima Kasih..!"); 
-});
+  alert("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!! Terima Kasih..!"); 
 }
 })
 fetch('https://script.google.com/macros/s/AKfycbxGdp0Lz6E8qM82I12n__XSL83W8vE6ntgVRR-v4NHJbObvj4Xxr2W02K7FtYfk4T0l/exec').then(function (response) {
@@ -324,7 +341,8 @@ function showMore() {
   $('.comment').removeClass('hidden')
   $('.show-more').hide()
 }
+
 </script>
 
-  </body>
+</body>
 </html>
