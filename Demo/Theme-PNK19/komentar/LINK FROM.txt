@@ -1,0 +1,8 @@
+LINK FROM ORI
+
+https://docs.google.com/forms/d/e/1FAIpQLScrJ9-Xq6So5Y4yVyVVSPnlwLQyt5Ir2FVan9FdgzX7pJ85ow/viewform?usp=header
+
+LINK APPS SCRIPT
+
+https://script.google.com/macros/s/AKfycbz6unNesQYEbhlYNfzGK87ZkhyklxtoX9tu53szuzPcC-l3znq6_0bRos7D4ay6dCj8/exec
+
