@@ -191,7 +191,27 @@ animation: new-comment 2s linear forwards;
   height:360px;
   overflow: auto;
 }
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
 
+.alert-success {
+  background:rgba(232, 32, 169, 0.8);
+}
+
+.alert-error {
+  background-color: #f44336;
+}
  </style>
 
 </head>
@@ -226,6 +246,9 @@ animation: new-comment 2s linear forwards;
   <section class="field-comments"></section>
 </div>
 
+  <div class="alert" id="alert">
+  <span id="alert-message"></span>
+</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -257,15 +280,19 @@ animation: new-comment 2s linear forwards;
             // Reset form
             $('#bootstrapForm')[0].reset();
           },
-          error: function() {
-            alert('Komentar Tersimpan!');
-          }
+       error: function() {
+  showAlert('Komentar Tersimpan!', 'success');
+}
         });
       } else {
-        alert('Nama dan komentar harus diisi!');
-      }
+  showAlert('Nama dan komentar harus diisi!', 'error');
+}
     });
   });
+
+
+
+
 
 
 function filterArray(array) {
@@ -282,7 +309,16 @@ if (name.length>3&&comment.length>3) {
   $('.com').hide()
   $('.com2').hide()
   $('.submit-comment').hide()
-  alert("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!! Terima Kasih..!"); 
+
+  const konfirmasi = confirm("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!");
+
+if (konfirmasi) {
+  alert("Komentar anda berhasil dikirim! Terima Kasih..!");
+  // Tambahkan kode yang ingin dijalankan setelah pengguna menekan tombol OK
+} else {
+  alert("Komentar anda tidak jadi dikirim.");
+}
+
 }
 })
 fetch('https://script.google.com/macros/s/AKfycbz6unNesQYEbhlYNfzGK87ZkhyklxtoX9tu53szuzPcC-l3znq6_0bRos7D4ay6dCj8/exec').then(function (response) {
@@ -341,6 +377,29 @@ for (i=0;i<comments.length;i++) {let index = [i];if(index>(hiddenNumber-1)) {com
 function showMore() {
   $('.comment').removeClass('hidden')
   $('.show-more').hide()
+}
+</script>
+
+<script>
+function showAlert(message, type) {
+  const alertElement = document.getElementById('alert');
+  const alertMessage = document.getElementById('alert-message');
+  
+  alertMessage.textContent = message;
+  
+  if (type === 'success') {
+    alertElement.classList.add('alert-success');
+    alertElement.classList.remove('alert-error');
+  } else if (type === 'error') {
+    alertElement.classList.add('alert-error');
+    alertElement.classList.remove('alert-success');
+  }
+  
+  alertElement.style.display = 'block';
+  
+  setTimeout(() => {
+    alertElement.style.display = 'none';
+  }, 5000);
 }
 
 </script>
