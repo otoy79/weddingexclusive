@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Komen Wedding Theme-PPL79 </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+<meta itemprop="name" content="The Wedding">
+<meta itemprop="description" content=" Buat Undangan website lebih keren, Wedding Exclusive Digital website, The Wedding Of.  Semple Undangan Gigital">
+<meta itemprop="image" content="https://weddingexclusive.pages.dev/Demo/Theme-PPL79/poto/icon.webp">
+
+ <style>
+ body {
+  font-size: 14px;
+}
+ fieldset {
+  border: 0.2px solid #999;
+  margin: 0px;
+  color: #fff;
+}
+.comment-wrapper {
+  background:rgba(3, 69, 31, 0.9);
+  margin-top: 2px;
+  max-width: 99%;
+  border: 0.5px solid #fff;
+  color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+}
+.comments-counter {
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+ .comments-counter p {margin:0;}
+.comments-counter p{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 33px;
+color: #fff;
+}
+.counter-coment {
+  font-family: 'Aeroport';
+  margin-left: 10px;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #4f3207;
+  background: #EEEDED;
+border-radius: 7px;
+  padding: 2px 7px 2px 7px;
+}
+.comments-counter {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.name-com {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 12px;
+  color:#000;
+  background: #F2F3F4;
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 8px 13px;
+  margin: 0px;
+  width:90%;
+}
+.name-com:placeholder {
+  color: #8C8989;
+}
+ .comment-com{
+  width:90%;
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+  color:#000;
+  background: #F2F3F4;
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 8px 13px;
+  margin: 0px;
+  resize:none;
+}
+.comment:focus {
+  resize:auto;
+}
+.submit-comment {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+text-transform: uppercase;
+color: #FFFFFF;
+  background: #1ac43f;
+border-radius: 4px;
+  border:none!important;
+  padding: 8px 16px;
+  cursor:pointer;
+  transition: .3s;
+  margin: 10px;
+}
+.submit-comment:hover {
+  transform:translateY(-2px);
+}
+.field-comments {
+  margin:0px;
+}
+.comment-name {
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+  color: #fff;
+}
+.comment-name::before {
+  margin-right: 10px;
+  content: ' ';
+  color: #fff;
+  border: 0.1px solid #555;
+  padding: 0px 8px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(235, 225, 245, 0.1), rgba(235, 225, 245, 0.2)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABHNCSVQICAgIfAhkiAAAAuhJREFUSImtljtoFGEUhc/5NyQkQRMVxCrOJigqiKBo1EoLXzO7aZTFIgiiIGgI+CqsVNRKQVhs7FPIgilmJmqnheCrChaKmEkIBCQ2JuIYCTvHwh0ZNpmdNXi7vXPO/S78s3N+okGVy+W2fD5vA7BJ9gOwJHWS/A5gGsA7Sf7k5OST4eHhX2lzmDa8t7d3CMAVABsaLQIAJGcl3Q3D8H6pVKpmQjzP20LyEYAdWcOXqXGSJcdxPqVCXNfdS/Ipye4VAP4MJOeq1erRgYGB10sgY2NjmyW9BdC1UkBckr4B2FcsFj8CgAGASqWSk1T5HwAAINlN8lG5XG77C+no6LiI7DP4EEXRhWq1epjkEIDPGfodlmWdBwDWXtNpkusbGN4aYw7Ztj0fN0ZGRlZ3dXU9J7mzge9LEASWyefzdgYAAK4kAQAwODg4L+lShm9DX1/fUUOykCHEzMzM6+X6CwsLL7O8URQVDIDdWULLstakPFqb5SXZbwD0ZAkXFxdPLddvb28/k+UFYBlJq5oQ3vE873T8QxJd1z1D8laWUVInfd+fB9AMCACmJAUk+wBsbMZAcq4FwBSA7U1CLJJWk1oAgKTpFklvSKZCJEUk30v6SPJn4lEbgG3I/hO/awHwBMDZFMGoMeZa/Vc1WZ7nbTLG3JZUSlnSZy07plCXGyRvOI5zM2PLJOw6yRt1M2ZJ9hAAfN+/DOBegv6iWCwebBaQAD0neSDRulooFO4ZAAiC4AGA8cQG+z3PO/EvANd1j5Pcn2iNh2F4H0jkied5WwC8igOrduAPwzC8XiqVvqYNHx0dXdfa2npL0jmSprbkHIA98VkuScZcLvdMUjJXfkh6TPKppA+S5iV1k9xK8gjJ4wA6Y7Gkb7lc7pht20uTMa5aQlawwoyXdDJOxLhMvcpxnE9hGO4CcJXkbJPDv0RRdCkIgv56AJByJYorvnfV4mA3yZ4oilaR/IE/n5g3xhh/YmLiWaN712+BCjBNnapkVAAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+  
+.comment {
+  background:rgba(3, 69, 31, 0.9);
+ .font-family: Baguile;
+  max-width:99%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom:13px;
+  padding: 10px;
+  -webkit-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
+-moz-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
+box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
+}
+  .comment p {margin: 0px}
+    .comment p {padding: 8px}
+.comment-text  {
+  flex-basis:100%;
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+margin-top: 9px;
+color: #19062e;
+  background:rgba(252, 252, 250, 0.8);
+   padding: 4px 10px;
+}
+.comment i {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+position:relative;
+color: #aaa;
+}
+  .comment i::before {
+  left:-20px;
+  top:-1px;
+  position:absolute;
+  content: '';
+  width:12px;
+  height:12px;
+  color: #fff;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAABHNCSVQICAgIfAhkiAAAA51JREFUSImtlkFIXFcUhv//vZnp1KB0KhqkiwkBHcUhzyEvSLNIO7SbphjIZigNFAW7sFm4km5nXVcuxEUjtJQ21I2kJWah8GiglHTGOE+Tjs5sMos2kGItWkY743t/F+NQq45a4tlcOO/c893/Xe45hzjGHMcJN7d2DJji+wBsElGATYDKEkuAsh51f2v9+ffJZHKnUR4e5cxms0EzeG6UNMcAtNf9kqoAygCaSAb3bXkhYdyrbk7Ytl09mM846Mjl8l1mqDlDmuOS2gTNy8MQFbp4b/ZuOGHFXrs3ezdM+RfleUPyNS+pjcS4GWrOuK4bO1aJ6xb6Rc0BfB3CoszKSCIezzT6DXVbevLkCr3QFIjLEjYM4D3L6np0SEkul+/6F6DpQqB69TQAAEjE45nCWvWqyDskIj7wYL8iAnt3EGrOELQgTfdZseFGCXO5fFdfX0+hoaqV4ueUhgW5XmXrim3bVQMAzOC50RoAi4XA7icNEyzlB2WYq0vLhcFGMcV85TaERYKWGWwZBQDDcZwwaY5JkszKSKq3t9IoAc3AeQIkeL5RTCrVW5FZGZEkEmOO44SN5taOAQDtIBZOewcnWSIez0BYANDeEum4Yew9NMDjN2cBqJtBfF1bed0AYAOAYYR+OEsIoIe1lbZBIiqpOjv7ReksEZbV/UxSlVTUqNUilNPptH/iTvq7e6cczLi/xE+IFoAywCYDUBlAUzqdPlRiDjN2vpL0I4DuAAKPcsuFoePCATQBKBsSSySDN29+ED0JYlnWiz//+O1tAJ+RCEuaXnLXviwWi68cjHXd1QskgxJKBqAsAPi+3joJAgDJZHK371LXp4IGAK6T/Oivbf+dI4Rcq63KGh51v+YzPjwNpG6JS7G5v7GdkPSxV9maP/jdF24BAKU5Oo4TjrS+UZLUBrPafxYP8vHKqk2fP5P8fWP916iRTCZ3JIyTJL3Q1MzM09DLAGZmnoYoTpGkhPFkMrljAIBX3ZwQ5IK43NkTmnwZSGdPYJKgLWjZq25OAPualuu6MR+v/kQiIvJOMV+5nUo1LpZHKejsCUxSHK41ru03Lcta+w+kBir0+8ADEpH/0xkfr6zaFKcI2kd1xkODhOu6MZ/hbwlakgRhoVbs9NCyup+h9pLpuqsXAF7zhVsg3iVJQcuGdlJ1BQ0hQH1aaRklcSbTypGQujmOE26JdNwwyOsAbVLReq2TUAKUpTS3sfH8u+Pmrn8ASsm2BXqTA7IAAAAASUVORK5CYII=");
+  background-size:cover!important;
+}
+.new-comment {
+animation: new-comment 2s linear forwards;
+}
+@keyframes new-comment {
+  0% {background: rgba(138, 6, 34, 0.6);}
+  100%{background:rgba(138, 6, 34, 0.8);}
+}
+.comment-body {
+  width:100%;
+  height:360px;
+  overflow: auto;
+}
+.alert {
+  position: fixed;
+  font-size: 13px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:rgba(3, 69, 31, 0.9);
+  color: #111;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.4px solid #eee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.alert-success {
+  background: #eee;
+}
+
+.alert-error {
+  background: #ebbecc;
+  border: 1.5px solid red;
+}
+.konfirmasi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.konfirmasi-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#konfirmasi-ok {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#konfirmasi-cancel {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ </style>
+
+</head>
+<body style="padding:2px">
+
+
+<form class="comment-wrapper" id="bootstrapForm">
+  <div class="com2">
+    <fieldset>
+      <legend for="1470973328">Name</legend>
+      <textarea id="1649390801" name="entry.1649390801" placeholder="Nama kamu" class="name-com"></textarea>
+    </div>
+  </fieldset>
+  <div class="com">
+    <fieldset>
+      <legend for="661980461">Comment</legend>
+      <textarea id="1774981357" name="entry.1774981357" placeholder="Tulis Ucapan do'a terbaik..." class="comment-com"></textarea>
+    </div>
+  </fieldset>
+  <input type="hidden" name="fvv" value="1">
+  <input type="hidden" name="fbzx" value="-3713892754641246235">
+  <input type="hidden" name="pageHistory" value="0">
+  <input class="submit-comment" type="submit" value="KIRIM">
+</form>
+
+<div class="comments-counter">
+  <p>Komentar</p>
+  <span class="counter-coment"></span>
+</div>
+
+<div class="comment-body">
+  <section class="field-comments"></section>
+</div>
+
+  <div class="alert" id="alert">
+  <span id="alert-message"></span>
+</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#bootstrapForm').submit(function(event) {
+      event.preventDefault();
+      var name = $('#1649390801').val();
+      var comment = $('#1774981357').val();
+      
+      if (name.length > 3 && comment.length > 3) {
+        // Kirim data ke Google Forms
+        $.ajax({
+          type: 'POST',
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLScQ3UJ2oastLJTJWqVqsCVZR8-0cAKeQ2HQufccDAq5Gv1nZw/formResponse',
+          data: {
+            'entry.1649390801': name,
+            'entry.1774981357': comment
+          },
+          success: function() {
+            // Tambahkan komentar baru ke dalam elemen .field-comments
+            $('.field-comments').append('<div class="comment"><p class="comment-name">' + name + '</p><p class="comment-text">' + comment + '</p></div>');
+            // Update counter komentar
+            var counter = parseInt($('.counter-coment').text()) + 1;
+            $('.counter-coment').text(counter);
+            // Reset form
+            $('#bootstrapForm')[0].reset();
+          },
+       error: function() {
+  showAlert('Komentar Tersimpan!', 'success');
+}
+        });
+      } else {
+  showAlert('Nama dan komentar harus diisi!', 'error');
+}
+    });
+  });
+
+
+function filterArray(array) {
+    return $.grep(array, function(element) {
+        return element !== null && element !== undefined && element.length !== 0;
+    });
+}
+$('.submit-comment').click(function(e) {
+    let name = $('#1649390801').val()
+let comment = $('#1774981357').val()
+if (name.length>3&&comment.length>3) {
+  $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${name} </p><i>Just now</i><p class="comment-text">${comment}</p></div>`)
+
+  $('.com').hide()
+  $('.com2').hide()
+  $('.submit-comment').hide()
+  const konfirmasi = confirm("Komentar anda akan dikirim... pastikan akun anda sudah login di browser anda..!");
+
+if (konfirmasi) {
+  alert("Komentar anda berhasil dikirim! Terima Kasih..!");
+  // Tambahkan kode yang ingin dijalankan setelah pengguna menekan tombol OK
+} else {
+  alert("Komentar anda tidak jadi dikirim.");
+}
+}
+})
+fetch('https://script.google.com/macros/s/AKfycbzLiZ-cND8H5YPd0FCwyYJ0jU-rD2gGkADV1nqISI3r3bUsKGQUcLr86AGRxUX3yG8ZPQ/exec').then(function (response) {
+ return response.json();
+}).then(function (json) {
+
+let comments = json
+delete comments[0]
+jQuery.each( comments, function( i, val ) {
+if(val!==undefined) {
+val = filterArray(val)
+}
+  if(val!==undefined&&val.length===3) {
+  
+    $('.counter-coment').text(comments.length - 1)
+    const digitMonths = {
+  1: 'Jan',
+2: 'Feb',
+      3: 'Mar',
+      4: 'Apr',
+      5: 'Mei',
+      6: 'Jun',
+      7: 'Jul',
+      8: 'Ags',
+      9: 'Sep',
+      10: 'Okt',
+      11: 'Nov',
+      12: 'Des',
+};
+  let hh = new Date(val[0]).getHours()*1
+  if(hh<10) {hh='0'+hh}
+  let mm = new Date(val[0]).getMinutes()*1
+  if(mm<10) {mm='0'+mm}
+  let dd = new Date(val[0]).getDate()*1
+  if(dd<10) {dd='0'+dd}
+    let time = hh+':'+mm+', '+ dd+' '+digitMonths[new Date(val[0]).getMonth()+1]+' ' + new Date(val[0]).getFullYear(),
+        name = val[1],
+        comment = val[2]
+    $('.field-comments').prepend(`<div class="comment"><p class="comment-name">${name} </p><i>${time}</i><p class="comment-text">${comment}</p></div>`)}
+
+});
+hideComments()
+}).catch(function (err) {
+ console.warn('Something went wrong.', err);
+});
+
+function hideComments() {
+  let hiddenNumber = 5
+if ($('.comment').length>(hiddenNumber-1)) {
+let comments = $('.comment')
+for (i=0;i<comments.length;i++) {let index = [i];if(index>(hiddenNumber-1)) {comments[i].classList.add('hidden')}}
+  $('.field-comments').append('<a class="show-more" onclick="showMore()"> Semua Komentar</a>')
+}
+  }
+
+function showMore() {
+  $('.comment').removeClass('hidden')
+  $('.show-more').hide()
+}
+</script>
+
+<script>
+function showAlert(message, type) {
+  const alertElement = document.getElementById('alert');
+  const alertMessage = document.getElementById('alert-message');
+  
+  alertMessage.textContent = message;
+  
+  if (type === 'success') {
+    alertElement.classList.add('alert-success');
+    alertElement.classList.remove('alert-error');
+  } else if (type === 'error') {
+    alertElement.classList.add('alert-error');
+    alertElement.classList.remove('alert-success');
+  }
+  
+  alertElement.style.display = 'block';
+  
+  setTimeout(() => {
+    alertElement.style.display = 'none';
+  }, 5000);
+}
+
+
+</script>
+
+</body>
+</html>
