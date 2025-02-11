@@ -23,6 +23,7 @@ box-shadow: rgba(163, 119, 15, 0.2) 0px 30px 60px -12px inset, rgba(163, 119, 15
    overflow: hidden;
   padding-bottom:15px;
 }
+
 @font-face {
     font-family: LPMQ;
     src: url(../font/LPMQ.ttf)
@@ -402,6 +403,92 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
 -moz-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
 box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
 }
+
+.itemRSVP {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+  color: #085e59;
+   padding: 10px;
+   -webkit-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+-moz-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
+}
+.itemRSVP h2 {
+  margin: 2.5vw;
+  z-index: 2;
+  position: relative;
+}
+#myBtnn {
+   margin: 0px; 
+  padding: 4vw 4vw 1vw 2vw ;
+  background: rgba(19, 151, 171, 0.0);
+  border-radius: 50%;
+  color: red;
+  font-weight: 700;
+  font-size: 5vw;
+  position: absolute;
+  text-align: center;
+  bottom: 11vw;
+  right: 7vw;
+  width: 8vw;
+  height: 8vw;
+  background: linear-gradient(rgba(237, 43, 192, 0.0), rgba(237, 43, 192, 0.4)), url(../rsvp/css/pens.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   z-index: 3;
+  cursor: pointer;
+}
+  .RSVPbook {
+  position: absolute;
+  top: 0vw;
+  left: 5vw;
+  width: 35vw;
+  height: 28vw;
+  background: linear-gradient(rgba(237, 43, 192, 0.0), rgba(237, 43, 192, 0.0)), url(../rsvp/css/books.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   z-index: 1;
+}
+#foterRSVP {
+  position: fixed;
+  bottom: 2.5vw;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 8vw;
+  height: 8vw;
+  background: linear-gradient(rgba(237, 43, 192, 0.0), rgba(237, 43, 192, 0.4)), url(../rsvp/css/pens.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+ .foterRSVP-animt {
+  animation: zoom-in-out 3.5s infinite;
+}
+
+ .animate-text {
+      animation: zoom-in-out 2s infinite;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    @keyframes zoom-in-out {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
  .item4 h2 {
   top: 0px;
   position: relative;
@@ -1347,21 +1434,12 @@ box-shadow: inset -2px -0.5px 132px 16.5px rgb(29, 54, 52, 0.4) ;
   padding-bottom: 15px;
   padding: 8px;
 }
-.item12 p {
+.item12  p {
   letter-spacing: 0.5px;
   font-size: 16px;
   padding-bottom:0px;
   padding: 2px 8px;
 }
-#myBtnn {
-   margin: 8px; 
-  padding: 8px 50px;
-  background: rgba(19, 151, 171, 0.15);
-  border: 0.4px solid #ccc;
-  border-radius: 6px;
-  color: #07484f;
-}
-
  .adam, .hawa, .adam2, .hawa2, .item8  {
    -webkit-box-shadow: -2px 1px 4px 0.2px #d4ad5f, 4px 1px 10px 4px #d4ad5f;
   box-shadow: -4px 1px 10px 0.2px #d4ad5f, 3px 1px 10px 0.2px #d4ad5f;
@@ -1371,161 +1449,4 @@ box-shadow: inset -2px -0.5px 132px 16.5px rgb(29, 54, 52, 0.4) ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.comment-wrapper {
-  background:rgba(166, 104, 12, 0.4);
-  margin-top: 13px;
-  max-width: 87%;
-  border: 0.5px solid #0c4559;
-  color: #0c4559;
-  padding: 15px;
-  border-radius: 8px;
- }
-.comments-counter {
-  display:flex;
-  justify-content: flex-start;
-  align-items:center;
-}
- .comments-counter p {margin:0;}
-.comments-counter p{
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 33px;
-color: #4f3207;
-}
-.counter-coment {
-  font-family: 'Aeroport';
-  margin-left: 5px;
-  margin-bottom: 0px;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-color: #4f3207;
-  background: #EEEDED;
-border-radius: 7px;
-  padding: 2px 7px 2px 7px;
-}
-.comments-counter {
-  margin-top:20px;
-  margin-bottom:0px;
-}
-#name-com {
-  font-family: 'Aeroport';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 22px;
-  color:#000;
-  background: #F2F3F4;
-border-radius: 4px;
-  outline:none!important;
-  border:none!important;
-  padding: 9px 13px;
-  margin-bottom:20px;
-  width:90%;
-}
-#name-com:placeholder {
-  color: #8C8989;
-}
-#comment-com{
-  width:90%;
-  font-family: 'Aeroport';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 22px;
-  color:#000;
-  background: #F2F3F4;
-border-radius: 4px;
-  outline:none!important;
-  border:none!important;
-  padding: 9px 13px;
-  margin-bottom:20px;
-  resize:none;
-}
-#comment:focus {
-  resize:auto;
-}
-.submit-comment {
-  font-family: 'Aeroport';
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 19px;
-text-transform: uppercase;
-color: #FFFFFF;
-  background: #608CFF;
-border-radius: 4px;
-  border:none!important;
-  padding: 5px 19px;
-  cursor:pointer;
-  transition: .3s;
-}
-.submit-comment:hover {
-  transform:translateY(-2px);
-}
-.field-comments {
-  margin-top: 6px;
-}
-.comment-name {
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-}
-.comment {
-  background:rgba(166, 104, 12, 0.4);
- .font-family: Baguile;
-  max-width:90%;
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  justify-content: space-between;
-  margin-bottom:13px;
-  padding: 10px;
-  -webkit-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
--moz-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
-}
-  .comment p {margin: 0px}
-    .comment p {padding: 8px}
-.comment-text  {
-  flex-basis:100%;
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-margin-top: 9px;
-color: #402c03;
-  background:rgba(245, 231, 211, 0.9);
-   padding: 88px ;
-}
-.comment i {
-  font-family: 'Aeroport';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-position:relative;
-color: #4f3612;
-}
-.comment i::before {
-  left:-28px;
-  top:-1px;
-  position:absolute;
-  content: '\01F550';
-  width:13px;
-  height:13px;
-  color: #4f3612;
-  
-}
-.new-comment {
-animation: new-comment 2s linear forwards;
-}
-@keyframes new-comment {
-  0% {background: rgba(247, 168, 233, 0.3);}
-  100%{background:rgba(247, 168, 233, 0.2);}
-}
-
-
-
-
-
 
