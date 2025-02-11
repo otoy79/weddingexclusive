@@ -420,7 +420,7 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   position: relative;
 }
 #myBtnn {
-   margin: 0px; 
+   margin: 0; 
   padding: 4vw 4vw 1vw 2vw ;
   background: rgba(19, 151, 171, 0.0);
   border-radius: 50%;
@@ -429,7 +429,7 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   font-size: 5vw;
   position: absolute;
   text-align: center;
-  bottom: 11vw;
+  bottom: 8vw;
   right: 7vw;
   width: 8vw;
   height: 8vw;
