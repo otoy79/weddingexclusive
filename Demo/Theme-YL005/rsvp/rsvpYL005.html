@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Komen Wedding Theme-YL005 </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+<meta itemprop="name" content="The Wedding">
+<meta itemprop="description" content=" Buat Undangan website lebih keren, Wedding Exclusive Digital website, The Wedding Of.  Semple Undangan Gigital">
+<meta itemprop="image" content="https://weddingexclusive.pages.dev/Demo/Theme-YL005/poto/icon.webp">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  
+   <div class="rsvp-container">
+<form class="comment-wrapper" 
+      id="bootstrapForm">
+   <div class="com">
+    <fieldset class="atas">
+        <h2><b>RSVP</b><br>Buku Tamu Undangan</h2>
+   <b>  Silahkan tulis data anda dengan lengkap <br>di bawah ini </b>
+   </fieldset>
+
+
+    <!-- Field type: "short" id: "589782286" -->
+    <fieldset>
+        <label for="589782286">Nama <small>👤</small> :</label>
+    <i class="form-group">
+            <input id="740531870" type="text" name="entry.740531870" class="name-com">
+     </i>
+        </fieldset>
+
+
+    <!-- Field type: "paragraph" id: "1337105458" -->
+    <fieldset>
+        <label for="1337105458">Alamat <small>🏠</small> :</label>
+        <i class="form-group">
+            <textarea id="1899843432" name="entry.1899843432" class="comment-com"></textarea>
+        </i>
+    </fieldset>
+  </div>
+
+    <!-- Field type: "dropdown" id: "1037928498" -->
+   <div class="com2">
+    <fieldset>
+        <label for="1037928498">Hadir <small>✔️</small> : </label>
+        <i class="name-com2">
+            <select id="1037928498" name="entry.668479367" class="comment-com">
+                <option value="Ya, Hadir">Ya, Hadir</option>
+                <option value="Tidak, Maaf tidak bisa Hadir">Tidak, Maaf tidak bisa Hadir</option>
+            </select>
+        </i>
+    </fieldset>
+
+
+    <!-- Field type: "paragraph" id: "306949951" -->
+    <fieldset>
+        <label for="306949951">Note <small>✒️</small></label>
+        <i class="form-group">
+            <textarea id="1334340083" name="entry.1334340083" class="comment-com"></textarea>
+        </i>
+    </fieldset>
+  </div>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-886644481354101570">
+   
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="submit-comment" type="submit" value="Save">
+
+  <div class="comments-counter">
+  <p>Pengirim</p>
+  <span class="counter-coment"></span>
+</div>
+    
+</form>
+</div>
+
+  <div class="wrapper">
+  <div class="book"></div>
+    <div class="comments-counter">
+<p>Konfirmasi Tamu</p><span class="counter-coment"></span>
+       </div>
+
+  <section class ="field-comments"></section>
+  
+</div>
+
+  <div class="alert" id="alert">
+  <span id="alert-message"></span>
+</div>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#bootstrapForm').submit(function(event) {
+      event.preventDefault();
+      var nama = $('#740531870').val();
+      var alamat = $('#1899843432').val();
+      var hadir = $('#1037928498').val();
+      var note = $('#1334340083').val();
+      
+      if (nama.length > 5 && alamat.length > 5 && hadir.length > 5&& note.length > 5) {
+        // Kirim data ke Google Forms
+        $.ajax({
+          type: 'POST',
+          url: 'https://docs.google.com/forms/d/e/1FAIpQLSfzvX9eY16ehk4coj5k1ruU6kvgeZm5UQxZibom9kLOKjomYg/formResponse',
+          data: {
+            'entry.740531870': nama,
+            'entry.1899843432': alamat,
+            'entry.668479367': hadir,
+            'entry.1334340083': note
+          },
+          success: function() {
+            // Tambahkan komentar baru ke dalam elemen .field-comments
+         //  $('.#field-comments').append('<div class="comment"><p class="comment-name">' + nama + '</p><i>' + time + '</i><p class="comment-text">' + alamat + '</p><p class="comment-text">' + hadir + '</p><p class="comment-text">' + note + '</p></div>');
+            // Update counter komentar
+            var counter = parseInt($('.counter-coment').text()) + 1;
+            $('.counter-coment').text(counter);
+            // Reset form
+            $('.field-comments')[0].reset();
+          },
+       error: function() {
+  showAlert('Catatan data anda Tersimpan!', 'success');
+}
+        });
+      } else {
+  showAlert('Silahkan di isi dengan benar!', 'error');
+}
+    });
+  });
+
+
+function filterArray(array) {
+    return $.grep(array, function(element) {
+        return element !== null && element !== undefined && element.length !== 0;
+    });
+}
+$('#bootstrapForm').click(function(e) {
+    var nama = $('#740531870').val();
+      var alamat = $('#1899843432').val();
+      var hadir = $('#1037928498').val();
+      var note = $('#1334340083').val();
+if (nama.length>5&&alamat.length>5&&hadir.length>5&&note.length>5) {
+  $('.field-comments').prepend(`<div class="comment new-comment"><p class="comment-name">${nama} <i>Just now</i></p><p class="comment-text"><small>🏠</small> ${alamat}</p><p class="comment-text"><small>✔️</small> ${hadir}</p><p class="comment-text"><small>✒️</small> ${note}</p></div>`)
+   $('.counter').text( $('.counter').text()*1+1)
+  $('.comment-wrapper').append('<p class="kirim-lagi animate-text"><i class="thank"> Thank You ..! </i> </p>')
+  $('.com').hide()
+  $('.com2').hide()
+  $('.comments-counter').hide()
+  $('.submit-comment').hide()
+  const konfirmasi = confirm("Catatan anda akan dikirim..!");
+  if (konfirmasi) {
+  alert("Catatan data anda berhasil disimpan!");
+  // Tambahkan kode yang ingin dijalankan setelah pengguna menekan tombol OK
+} else {
+  alert("Catatan anda tidak jadi dikirim.");
+}
+
+}
+})
+fetch('https://script.google.com/macros/s/AKfycbzoWtTtSdDbVmenPVUdZocoSjMdmNHKaSRIswFgg1zUxyDlvfNn1DpFg3Bey-YpEm5_/exec').then(function (response) {
+ return response.json();
+}).then(function (json) {
+
+let comments = json
+delete comments[0]
+jQuery.each( comments, function( i, val ) {
+if(val!==undefined) {
+val = filterArray(val)
+}
+  if(val!==undefined&&val.length===5) {
+  
+    $('.counter-coment').text(comments.length - 1)
+    const digitMonths = {
+  1: 'Jan',
+2: 'Feb',
+      3: 'Mar',
+      4: 'Apr',
+      5: 'Mei',
+      6: 'Jun',
+      7: 'Jul',
+      8: 'Ags',
+      9: 'Sep',
+      10: 'Okt',
+      11: 'Nov',
+      12: 'Des',
+};
+  let hh = new Date(val[0]).getHours()*1
+  if(hh<10) {hh='0'+hh}
+  let mm = new Date(val[0]).getMinutes()*1
+  if(mm<10) {mm='0'+mm}
+  let dd = new Date(val[0]).getDate()*1
+  if(dd<10) {dd='0'+dd}
+    let time = hh+':'+mm+', '+ dd+' '+digitMonths[new Date(val[0]).getMonth()+1]+' ' + new Date(val[0]).getFullYear(),
+        nama = val[1],
+        alamat = val[2]
+        hadir = val[3],
+        note = val[4]
+        
+    $('.field-comments').prepend(`<div class="comment"><p class="comment-name">${nama} <i>${time}</i></p><p class="comment-text"><small>🏠</small> ${alamat}</p><p class="comment-text"><small>✔️</small> ${hadir}</p><p class="comment-text"><small>✒️</small> ${note}</p></div>`)}
+
+});
+hideComments()
+}).catch(function (err) {
+ console.warn('Something went wrong.', err);
+});
+
+function hideComments() {
+  let hiddenNumber = 5
+if ($('.comment').length>(hiddenNumber-1)) {
+let comments = $('.comment')
+for (i=0;i<comments.length;i++) {let index = [i];if(index>(hiddenNumber-1)) {comments[i].classList.add('hidden')}}
+  $('.field-comments').append('<a class="show-more" onclick="showMore()"> Semua Komentar</a>')
+}
+  }
+
+function showMore() {
+  $('.comment').removeClass('hidden')
+  $('.show-more').hide()
+}
+ 
+</script>
+
+<script>
+function showAlert(message, type) {
+  const alertElement = document.getElementById('alert');
+  const alertMessage = document.getElementById('alert-message');
+  
+  alertMessage.textContent = message;
+  
+  if (type === 'success') {
+    alertElement.classList.add('alert-success');
+    alertElement.classList.remove('alert-error');
+  } else if (type === 'error') {
+    alertElement.classList.add('alert-error');
+    alertElement.classList.remove('alert-success');
+  }
+  
+  alertElement.style.display = 'block';
+  
+  setTimeout(() => {
+    alertElement.style.display = 'none';
+  }, 5000);
+}
+
+
+</script>
+
+</body>
+</html>
