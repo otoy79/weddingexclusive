@@ -229,6 +229,14 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami.</p>
  </div>
 </div>
 
+ <div class="itemRSVP" data-aos="zoom-in">
+   <p class="RSVPbook"> </p>
+    <p id="myBtnn" class="animate-text">Click</p>
+    <h2><st>  RSVP </st> </h2>
+   <h2>Tulis Buku Undangan</h2>
+</div>
+
+
     <!-- EDIT DI JS TIMER🔴 -->
  <div class="item5" data-aos="flip-up">
    <div class="ball-wrapper" data-aos="slide-up">
@@ -264,6 +272,8 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami.</p>
  <div class="itemAkad" data-aos="zoom-in">
     <h2><st>  Save Date </st> </h2>
 </div>
+
+
    <div class="itemAkadCenter" data-aos="zoom-in">
    <div class="akad" data-aos="fade-right">
   <p class="salaman"></p>
@@ -485,10 +495,9 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami.</p>
   <h1>Beri Doa & Ucapan Terbaikmu.</h1>
   <p>___ ✒️ 💬 _________</p>
   <p>Tuliskan harapan dan doa terbaik Anda untuk calon kedua mempelai melalui kolom berikut ini.</p>
-    <button style="display:none" id="myBtnn" >Send Comment</button>
-     
+   
   <!-- EDIT BOX COMMENT🔴 -->
-     <iframe id="iframe" scrolling="no" src="komentar/komenTheme-YL005.html">
+     <iframe id="iframe" src="komentar/komenTheme-YL005.html">
 </iframe>
 
 </div>
@@ -496,20 +505,24 @@ serta kerabat sekalian, untuk menghadiri acara pernikahan kami.</p>
 
 
 
-    <!-- EDIT BOX COMMENT❌ -->
+    <!-- EDIT BOX RSVP-->
   <div id="myModol" class="modal">
-   <div class="modal-footer">
-     <button class="close">Close</button>
-  </div>
   <span class="close-x"></span>
   <div class="modal-content">
     <div class="modal-body">
- <div class="powr-comments-box" id="ceec5632_1737045274"></div><script src="https://www.powr.io/powr.js?platform=google"></script>
 
+     <!-- EDIT BOX RSVP 🔴 -->
+      <iframe id="iframe2" scrolling="no" src="rsvp/rsvpYL005.html">
+</iframe>
+  
    </div>
+   <div class="modal-footer">
+     <button class="close">Close</button>
+  </div>
     </div>
     </div>
-
+   
+     <div id="foterRSVP" class="foterRSVP-animt" data-aos="zoom-in"></div>
 
  
 
@@ -590,17 +603,17 @@ $(document).ready(function(){
     $(".item-card").toggle(1500);
   });
 });
-$("#myBtnn").click(function(){
+$("#myBtnn, #foterRSVP").click(function(){
   $("#myModol").fadeIn();
 });
 $(".close").click(function(){
-  $(".modal").slideToggle('slow');
+  $(".modal").fadeOut('slow');
 });
 $(".close-wel").click(function(){
   $("#myWelcome").slideToggle('slow');
 });
 $(".close-x").click(function(){
-  $(".modal").slideToggle('slow');
+  $(".modal").fadeOut('slow');
 });
 </script>
   
