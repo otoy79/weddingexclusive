@@ -409,7 +409,7 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
   margin: 0px auto;
   text-align: center;
   color: #085e59;
-   padding: 10px;
+   padding: 3vw;
    -webkit-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
 -moz-box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
 box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
@@ -869,12 +869,12 @@ box-shadow: inset -2px -0.5px 32px 16.5px #a46d07;
  
 .btn0 {
   position: relative;
-  width: 4.5em;
-  padding: 0.2em ;
-  margin: 15px;
+  width: 22vw;
+  padding: 2vw ;
+  margin: 3vw;
   left: 20%;
   transform: translateX(-50%);
-  font-size: 1.2em;
+  font-size: 4.5vw;
   color: red; 
   background: rgba(158, 102, 6, 0.2);
   border: 0.1px solid #422b03;
