@@ -1,0 +1,176 @@
+fieldset {
+  border: 0.2px solid #fff;
+  margin: 0px;
+  color: #111;
+}
+.comment-wrapper {
+  background:rgba(166, 104, 12, 0.15);
+  margin-top: 2px;
+  max-width: 99%;
+  border: 0.5px solid #0c4559;
+  color: #0c4559;
+  padding: 5px;
+  border-radius: 8px;
+}
+.comments-counter {
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+ .comments-counter p {margin:0;}
+.comments-counter p{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 33px;
+color: #4f3207;
+}
+.counter-coment {
+  font-family: 'Aeroport';
+  margin-left: 5px;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #4f3207;
+  background: #EEEDED;
+border-radius: 7px;
+  padding: 2px 7px 2px 7px;
+}
+.comments-counter {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.name-com {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 12px;
+  color:#000;
+  background: #F2F3F4;
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 8px 13px;
+  margin: 0px;
+  width:90%;
+}
+.name-com:placeholder {
+  color: #8C8989;
+}
+ .comment-com{
+  width:90%;
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+  color:#000;
+  background: #F2F3F4;
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 8px 13px;
+  margin: 0px;
+  resize:none;
+}
+.comment:focus {
+  resize:auto;
+}
+.submit-comment {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+text-transform: uppercase;
+color: #FFFFFF;
+  background: #6e4209;
+border-radius: 4px;
+  border:none!important;
+  padding: 6px 16px;
+  cursor:pointer;
+  transition: .3s;
+  margin: 10px;
+}
+.submit-comment:hover {
+  transform:translateY(-2px);
+}
+.field-comments {
+  margin:0px;
+}
+.comment-name {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+}
+.comment-name::before {
+  margin-right: 10px;
+  content: ' ';
+  color: #fff;
+  border: 0.1px solid #555;
+  padding: 0px 8px;
+  border-radius: 50%;
+  background: linear-gradient(rgba(242, 242, 242, 0.3), rgba(168, 168, 158, 0.6)), url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNy4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjUgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZD0iTTIyNCAyNTZBMTI4IDEyOCAwIDEgMCAyMjQgMGExMjggMTI4IDAgMSAwIDAgMjU2em0tNDUuNyA0OEM3OS44IDMwNCAwIDM4My44IDAgNDgyLjNDMCA0OTguNyAxMy4zIDUxMiAyOS43IDUxMmwzODguNiAwYzE2LjQgMCAyOS43LTEzLjMgMjkuNy0yOS43QzQ0OCAzODMuOCAzNjguMiAzMDQgMjY5LjcgMzA0bC05MS40IDB6Ii8+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+  
+.comment {
+  background:rgba(166, 104, 12, 0.15);
+ .font-family: Baguile;
+  max-width:99%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom:13px;
+  padding: 10px;
+  -webkit-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
+-moz-box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
+box-shadow: 2px 2px 1px 0px rgba(64, 44, 3, 0.55);
+}
+  .comment p {margin: 0px}
+    .comment p {padding: 8px}
+.comment-text  {
+  flex-basis:100%;
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+margin-top: 9px;
+color: #402c03;
+  background:rgba(250, 250, 250, 0.9);
+   padding: 4px 10px;
+}
+.comment i {
+  font-family: 'Aeroport';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+position:relative;
+color: #777;
+}
+  .comment i::before {
+  left:-28px;
+  top:-1px;
+  position:absolute;
+  content: '🕗';
+  width:13px;
+  height:13px;
+  color: #fff;
+  background-image: url(" ");
+  background-size:cover!important;
+}
+.new-comment {
+animation: new-comment 2s linear forwards;
+}
+@keyframes new-comment {
+  0% {background: rgba(138, 6, 34, 0.6);}
+  100%{background:rgba(138, 6, 34, 0.4);}
+}
+.comment-body {
+  width:100%;
+  height:410px;
+  overflow: auto;
+}
