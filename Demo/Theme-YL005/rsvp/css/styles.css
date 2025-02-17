@@ -11,16 +11,29 @@
   background:rgba(220, 250, 248, 0.1);
   color: #1c1203;
   font-weight: 700;
-  font-size: 4.5vw;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-
+ .item {
+  width: 100%;
+  margin: 5px auto;
+  background: rgba(163, 119, 15, 0.055);
+  text-align: center;
+  color: #543906;
+    align-items: center;
+    justify-content: center;
+  
+}
    .rsvp-container {
-  margin: 5vw;
-  width: 90%;
+  margin: 8px;
+  width: 330px;
   z-index: 1;
+  display: inline-block;
+    align-items: center;
+    justify-content: center;
+   
 }
  .rsvp-container, .comment {
   background: linear-gradient(rgba(237, 43, 192, 0.0), rgba(237, 43, 192, 0.1)), url(book.png);
@@ -46,11 +59,11 @@
 .comment-wrapper {
   background:rgba(170, 242, 237, 0.0);
   margin-top: 0px;
-  max-width: 100%;
-  padding-left: 10vw;
-  padding-top: 12vw;
-  padding-bottom: 8vw;
-  border-radius: 6vw;
+  max-width: 320px;
+  padding-left: 0px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  border-radius: 6px;
   
 }
 .wrapper {
@@ -59,63 +72,65 @@
     background-repeat: no-repeat;
    background-repeat: round;
   margin-top: 0px;
-  max-width: 100%;
-  padding-left: 1vw;
-  padding-top: 1vw;
-  padding-bottom: 8vw;
-  border-radius: 6vw;
-  display: grid;
+  max-width: 320px;
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 8px;
+  display: inline-block;
     align-items: center;
     justify-content: center;
+ 
 }
   .book {
   position: absolute;
   top: 0vw;
-  left: 5vw;
-  width: 33vw;
-  height: 26vw;
+  left: 1px;
+  width: 120px;
+  height: 88px;
   background: linear-gradient(rgba(237, 43, 192, 0.0), rgba(237, 43, 192, 0.0)), url(books.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
    z-index: 0;
+  
 }
 .comments-counter {
+  position: relative;
   display:flex;
   justify-content: flex-start;
   align-items:center;
    text-align: center;
    margin:0;
+    z-index: 2;
 }
  .comments-counter p {margin:0;}
 .comments-counter p{
 font-style: normal;
 font-weight: 400;
-font-size: 5vw;
-line-height: 10vw;
+font-size: 16px;
+line-height: 20px;
 }
 .counter-coment {
-  font-family: 'Aeroport';
-  margin-left: 2vw;
+  margin-left: 8px;
 font-style: normal;
 font-weight: 500;
-font-size: 4vw;
-line-height: 8vw;
+font-size: 20px;
+line-height: 20px;
   background:rgba(223, 237, 236, 0.3);
 border-radius: 7px;
-  padding: 1px 4px 1px 4px;
+  padding: 2px 6px 2px 6px;
 }
 .comments-counter {
-  margin-top: 2vw;
-  margin-bottom: 3vw;
+  margin-top: 8px;
+  margin-bottom: 30px;
   text-align: center;
-  margin-left: 20%;
+  margin-left: 30%;
 }
-  
 .name-com  {
 font-style: normal;
-font-weight: 400;
-font-size: 3vw;
-line-height: 4vw;
+font-weight: 700;
+font-size: 22px;
+line-height: 20px;
   color:#000;
   background: transparent;
 border-radius: 0px;
@@ -128,8 +143,8 @@ border-radius: 0px;
  .name-com2  {
 font-style: normal;
 font-weight: 400;
-font-size: 3.5vw;
-line-height: 4vw;
+font-size: 12px;
+line-height: 14px;
   color:#000;
   background: transparent;
 border-radius: 0px;
@@ -143,7 +158,7 @@ border-radius: 0px;
   border: 0;
   border-bottom: 0.2px solid rgba(0, 0, 0, 0.8);
   min-width: 45%;
-  font-size: 4vw;
+  font-size: 17px;
   outline: none;
   background: transparent;
   display: inline block;
@@ -157,9 +172,9 @@ border-radius: 0px;
  .comment-com{
   width:55%;
 font-style: normal;
-font-weight: 400;
-font-size: 4vw;
-  height: 4.7vw;
+font-weight: 700;
+font-size: 16px;
+  height: 19px;
   color:#000;
   background: #F2F3F4;
 border-radius: 0px;
@@ -179,33 +194,34 @@ border-radius: 0px;
   resize:auto;
 }
 .submit-comment {
-  font-family: 'Aeroport';
 font-style: normal;
 font-weight: 700;
-font-size: 4vw;
-line-height: 4vw;
+font-size: 14px;
+line-height: 18px;
 text-transform: uppercase;
 color: #FFFFFF;
   background: #8a5408;
 border-radius: 4px;
   border:none!important;
-  padding: 2vw 3.5vw;
+  padding: 4px 10px;
   cursor:pointer;
   transition: .3s;
-  margin: 4vw;
+  margin: 30px;
 }
 .submit-comment:hover {
   transform:translateY(-2px);
 }
 .field-comments {
+  position: relative;
   margin:0px;
-  margin-top: 2vw;
+  margin-top: 40px;
   z-index: 2;
 }
 .comment-name {
 font-style: normal;
 font-weight: 700;
-font-size: 5vw;
+font-size: 18px;
+ text-align: left;
   color: #000;
   border-bottom: 0.8px solid #555;
 }
@@ -213,23 +229,24 @@ font-size: 5vw;
   margin-right: 3px;
   content: '👤';
   color: #fff;
-  font-size: 3.8vw; 
+  font-size: 14px; 
   padding-bottom: 13px;
   position: relative;
-  bottom: 0.8vw;
+  bottom: 4px;
+  text-align: left;
  }
   small {
   position: relative;
-   font-size: 2.5vw; 
-  padding-right: 1.5vw;
+   font-size: 10px; 
+  padding-right: 4px;
   border: 0.1px solid #777;
-  padding: 0.4vw;
-  bottom: 0.5vw;
+  padding: 2px;
+  bottom: 2px;
   border-radius: 2px;
 }
  b {
-   font-size: 3.8vw; 
-  padding-left: 4vw;
+   font-size: 16px; 
+  padding-left: 8px;
  }
 .main section {
     display: grid;
@@ -242,13 +259,14 @@ font-size: 5vw;
   
 }
 .comment {
-  magin:1vw;
+  magin:4px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  width: 75vw;
+  width: 300px;
   justify-content: space-between;
-  margin-bottom:2.2vw;
-  padding: 2vw;
+  margin-bottom:6px;
+  padding: 6px;
+ text-align: left;
   
 }
   .comment p {margin: 0px}
@@ -260,23 +278,24 @@ font-style: normal;
 font-weight: 400;
 margin-top: 0px;
   background:rgba(252, 252, 250, 0.1);
-   padding: 1vw 3vw;
+   padding: 4px 8px;
   border-bottom: 0.1px solid #555;
+  font-size: 16px;
 }
 .comment i {
   float: right;
 font-style: normal;
 font-weight: 400;
-font-size: 4vw;
+font-size: 16px;
 position:relative;
  color: #2e1c02;
 }
   .comment i::before {
-  left:-5vw;
-  top: 1vw;
+  left:-20px;
+  top: 6px;
   position:absolute;
   content: '\01F550';
-  font-size: 3vw;
+  font-size: 11px;
 }
 .new-comment {
   animation: zoom-in-out 3s infinite;
@@ -296,7 +315,7 @@ position:relative;
 }
 .comment-body {
   width:100%;
-  height:110vw;
+  height:200px;
   overflow: auto;
 }
 .kirim-lagi {
@@ -305,18 +324,18 @@ position:relative;
 }
  .thank {
   font-family: cursive;
-  font-size: 8vw;
+  font-size: 26px;
  color: #c70eab;
-  padding: 4px 8px;
+  padding: 8px 14px;
   text-align: center;
   animation: zoom-in-out 2s infinite;
     }
 
     .animate-text {
      font-family: cursive;
-  font-size: 8vw;
+  font-size: 26px;
  color: #c70eab;
-  padding: 4px 8px;
+  padding: 8px 14px;
       animation: zoom-in-out 2s infinite;
       font-weight: bold;
       text-align: center;
@@ -336,7 +355,7 @@ position:relative;
 
 .alert {
   position: fixed;
-  font-size: 5vw;
+  font-size: 15px;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
