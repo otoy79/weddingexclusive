@@ -1,0 +1,400 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>From Data Pengantin Wanita</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+<meta itemprop="name" content="The Wedding">
+<meta itemprop="description" content=" Buat Undangan website lebih keren, Wedding Exclusive Digital website, The Wedding Of.  Semple Undangan Gigital">
+<meta itemprop="image" content="https://weddingexclusive.pages.dev/assets/img/wlove.png">
+
+ <style>
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Macondo&family=Protest+Riot&display=swap');
+ body {
+  font-size: 14px;
+  font-family: "Macondo", serif;
+  background:rgba(8, 97, 36, 0.9);
+  color: #222;
+}
+ legend {color: #000;
+  font-weight: 400;
+  
+}
+
+.comment-wrapper {
+  background: #ebd5c7;
+  margin-top: 0px;
+  max-width: 100%;
+  border: 0.5px solid #bbb;
+  padding: 15px;
+  border-radius: 8px;
+  color: #222;
+}
+
+.name-com {
+font-style: normal;
+ font-family: "Macondo", serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 10px;
+  color:#000;
+  background:rgba(250, 250, 250, 0.88);
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 4px 10px;
+  margin: 0px;
+  width:85%;
+}
+.name-com2 {
+font-style: normal;
+ font-family: "Macondo", serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 10px;
+  color:#000;
+  background:rgba(250, 250, 250, 0.88);
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 4px 10px;
+  margin-right: 5px;
+  width:35%;
+  margin-top: 0.5px;
+}
+.name-com3 {
+font-style: normal;
+ font-family: "Macondo", serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 10px;
+  color:#000;
+  background:rgba(250, 250, 250, 0.88);
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 4px 10px;
+  width:35%;
+  margin-right: 5px;
+}
+.name-com:placeholder {
+  color: #8C8989;
+}
+ .comment-com{
+  width:85%;
+  height:45px;
+  font-family: "Macondo", serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+  color:#000;
+  background:rgba(250, 250, 250, 0.88);
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 4px 10px;
+  margin: 0px;
+  resize:none;
+}
+.comment-com2{
+  width:85%;
+  height:150px;
+  font-family: "Macondo", serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+  color:#000;
+  background:rgba(250, 250, 250, 0.88);
+border-radius: 5px;
+  outline:none!important;
+  border:none!important;
+  padding: 4px 10px;
+  margin: 0px;
+  resize:none;
+}
+.comment:focus {
+  resize:auto;
+}
+
+.control {
+  position: relative; 
+  margin-top:5px;
+  color: #444;
+}
+ .control h4 {
+  margin:0;
+  font-size: 16px;
+}
+
+.control2 {
+  position: relative;
+  margin-top:5px;
+  color: #444;
+  display: inline-flex;
+    align-items: center;
+}
+.controlR {
+  position: relative; 
+  margin-top:20px;
+  color: #444;
+}
+  .control3 {
+  margin: 0;
+  position: relative;
+  margin-top:20px;
+  color: #444;
+  display: inline-flex;
+    align-items: center;
+}
+ .whatsapp-link {
+    margin: 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+    padding: 2px 20px;
+    background: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.whatsapp {
+ height: 33px;
+ weight: 33px;
+font-size: 18px;
+}
+#popup {
+  display: none; 
+  position: fixed; 
+  z-index: 2;pointer-events: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff; 
+  padding: 8px 10px; 
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: red;
+  font-size: 16px;
+  text-align: center;
+}
+ </style>
+
+</head>
+<body style="padding:2px">
+
+
+<form class="comment-wrapper">
+ <div class='control'>
+  <h3>Silahkan isi Data Hajat</h3>
+  </div>
+ <div class='control'>
+ <h4>Akad : </h4>
+  </div>
+  <div class='control2'>
+      <input type="text" id="HariA" name="haria" class="name-com2" placeholder="Hari" required>
+  
+      <input type="text" id="TglA" name="tgla" class="name-com2" placeholder="Tanggal" required>
+  
+      <input type="text" id="JamA" name="jama" class="name-com2" placeholder="Jam" required>
+  </div>
+  <div class='control'>
+   <legend>Tempat/alamat :</legend>
+        <textarea type="text" class='comment-com' id='AlamatA' name='alamata' required>
+</textarea>
+      </div>
+ 
+  <div class='control'>
+     <legend>Link google maps :</legend>
+        <input type="text" class='name-com' id='GmapsA' name='gmapsa' required>
+      </div>
+
+ <br>
+ <div class='control'>
+ <h4>Resepsi : </h4>
+  </div>
+  <div class='control2'>
+      <input type="text" id="HariR" name="harir" class="name-com2" placeholder="Hari" required>
+  
+      <input type="text" id="TglR" name="tglr" class="name-com2" placeholder="Tanggal" required>
+  
+      <input type="text" id="JamR" name="jamr" class="name-com2" placeholder="Jam" required>
+  </div>
+  <div class='control'>
+   <legend>Tempat/alamat :</legend>
+        <textarea type="text" class='comment-com' id='AlamatR' name='alamatr' required>
+</textarea>
+      </div>
+  <div class='control'>
+     <legend>Link google maps :</legend>
+        <input type="text" class='name-com' id='GmapsR' name='gmapsr' required>
+      </div>
+
+  <br>
+  <div class='control'>
+ <h4>Turut Mengundang : </h4>
+  </div>
+   <div class='control'>
+        <textarea type="text" class='comment-com2' id='Undang' name='undang' required>
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+</textarea>
+      </div>
+      
+
+ 
+  <div class='formB'>
+      <a class='whatsapp-link' onclick='redirectToWhatsApp()'>
+        <svg class="whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 2a13 13 0 0 0-8 23.23V29a1 1 0 0 0 .51.87A1 1 0 0 0 9 30a1 1 0 0 0 .51-.14l3.65-2.19A12.64 12.64 0 0 0 16 28a13 13 0 0 0 0-26Zm0 24a11.13 11.13 0 0 1-2.76-.36 1 1 0 0 0-.76.11L10 27.23v-2.5a1 1 0 0 0-.42-.81A11 11 0 1 1 16 26Z"/><path d="M19.86 15.18a1.9 1.9 0 0 0-2.64 0l-.09.09-1.4-1.4.09-.09a1.86 1.86 0 0 0 0-2.64l-1.59-1.59a1.9 1.9 0 0 0-2.64 0l-.8.79a3.56 3.56 0 0 0-.5 3.76 10.64 10.64 0 0 0 2.62 4 8.7 8.7 0 0 0 5.65 2.9 2.92 2.92 0 0 0 2.1-.79l.79-.8a1.86 1.86 0 0 0 0-2.64Zm-.62 3.61c-.57.58-2.78 0-4.92-2.11a8.88 8.88 0 0 1-2.13-3.21c-.26-.79-.25-1.44 0-1.71l.7-.7 1.4 1.4-.7.7a1 1 0 0 0 0 1.41l2.82 2.82a1 1 0 0 0 1.41 0l.7-.7 1.4 1.4Z"/></svg>
+        Send WhatsApp</a>
+    </div>
+   <i>Pastikan lagi pengisian  data anda sudah benar..!</i>
+</form>
+
+  <div id="popup">
+</div>
+
+
+<script>
+  function redirectToWhatsApp() {
+  /* Isi Pesan Form */
+  var haria = document.getElementById("HariA").value;
+
+  var tgla = document.getElementById("TglA").value;
+ 
+  var jama = document.getElementById("JamA").value;
+
+var alamata = document.getElementById("AlamatA").value;
+
+var gmapsa = document.getElementById("GmapsA").value;
+ 
+var harir = document.getElementById("HariR").value;
+
+  var tglr = document.getElementById("TglR").value;
+ 
+  var jamr = document.getElementById("JamR").value;
+
+var alamatr = document.getElementById("AlamatR").value;
+
+var gmapsr = document.getElementById("GmapsR").value;
+ 
+  var undang = document.getElementById("Undang").value;
+
+  var postLink = window.location.href;
+ 
+ /* validation */
+      error_subject = document.getElementById("error_subject"),
+    error_nama = document.getElementById("error_nama"),
+      error_email = document.getElementById("error_email"),
+      error_alamat = document.getElementById("error_alamat");
+  
+function showPopup(message) {
+  var popup = document.getElementById("popup");
+  popup.innerHTML = message;
+  popup.style.display = "block";
+  setTimeout(function() {
+    popup.style.display = "none";
+  }, 4000);
+}
+  var text;
+  if (haria == "") {
+  showPopup("Tulis Hari Akad..!");
+  return false;
+}
+if (tgla == "") {
+  showPopup("Tulis Tanggal Akad!. ");
+  return false;
+}
+   if (jama == "") {
+    showPopup(" Tulis Waktu/Jam Akadnya..! ");
+    return false;
+  }
+    if (alamata == "") {
+    showPopup(" Tulskan Alamat Akad..! ");
+    return false;
+  }
+  if (gmapsa == "") {
+    showPopup(" Tempel Link Gmaps tempat Akad..! ");
+    return false;
+  }
+  if (harir == "") {
+    showPopup(" Tulis Hari Resepsi ");
+    return false;
+  }
+  if (tglr == "") {
+    showPopup(" Tulis Tanggal Resepsi..! ");
+    return false;
+  }
+  if (jamr == "") {
+    showPopup(" Tulis Waktu Acara Resepsi..! ");
+    return false;
+  }
+   if (alamatr == "") {
+    showPopup(" Tulis Alamat tempat Resepsi..! ");
+    return false;
+  }
+  if (gmapsr == "") {
+    showPopup(" Tempel Link Gmaps tempat Resepsi..! ");
+    return false;
+  }
+   if (undang == "") {
+    showPopup(" Siapa saja yang tercantum di Undangan..! ");
+    return false;
+  }
+
+  
+  /* Pengaturan Pesan */
+  var message = "*Data Akad :* " + tgla + "\n\n"; // Pesan 1
+  message += "𝑯𝒂𝒓𝒊 : " + haria + "\n";
+  message += "𝑻𝒈𝒍 :  " + tgla + "\n";
+  message += "𝑾𝒂𝒌𝒕𝒖/𝑱𝒂𝒎 :  " + jama + "\n";
+   message += "𝑨𝒍𝒂𝒎𝒂𝒕 :  " + alamata + "\n";
+  message += "𝑳𝒐𝒌𝒂𝒔𝒊 𝑴𝒂𝒑𝒔 :  " + gmapsa + "\n\n";
+
+  message += "*Data Resepsi :* " + tglr + "\n\n";
+  message += "𝑯𝒂𝒓𝒊 :  " + harir + "\n";
+  message += "𝑻𝒈𝒍 : " + tglr + "\n";
+  message += "𝑾𝒂𝒌𝒕𝒖/𝑱𝒂𝒎 : " + jamr + "\n";
+  message += "𝑨𝒍𝒂𝒎𝒂𝒕 : " + alamatr + "\n";
+  message += "𝑳𝒐𝒌𝒂𝒔𝒊 𝑴𝒂𝒑𝒔 :  " + gmapsr + "\n\n";
+  message += "𝑻𝒖𝒓𝒖𝒕 𝑴𝒆𝒏𝒈𝒖𝒏𝒅𝒂𝒏𝒈 : " + undang + "\n";
+
+
+  message += "===========================" + "\n";
+  message += "*Dikirim dari :* " + postLink + "\n";
+  message += "===========================";
+  /* Pengaturan Whatsapp */
+  var walink = 'whatsapp://send',
+      phoneNumber = '+6281806420688'; // No Whatsapp Kalian
+  
+  var encodedMessage = encodeURIComponent(message);
+  var whatsappUrl = walink + "?phone=" + phoneNumber + "&text=" + encodedMessage;
+  window.open(whatsappUrl, '_blank');
+  return true;
+}
+
+var inputs = document.querySelectorAll('.Fcontrol input[type=text], .Fcontrol input[type=email], .Fcontrol textarea');
+for (var i = 0; i < inputs.length; i++) {
+  var input = inputs[i];
+  input.addEventListener('input', function() {
+    var bg = this.value ? 'show' : 'none';
+    this.setAttribute('class', bg);
+  });
+}
+
+</script>
+
+
+
+</body>
+</html>
