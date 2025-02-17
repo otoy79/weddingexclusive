@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Komen Wedding Theme-YL005 </title>
+        <title>Buku Undangan Wedding Theme-YL005 </title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -10,11 +10,14 @@
 <meta itemprop="description" content=" Buat Undangan website lebih keren, Wedding Exclusive Digital website, The Wedding Of.  Semple Undangan Gigital">
 <meta itemprop="image" content="https://weddingexclusive.pages.dev/Demo/Theme-YL005/poto/icon.webp">
 
+  <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
   
+   <div class="item" data-aos="zoom-in">
    <div class="rsvp-container">
 <form class="comment-wrapper" 
       id="bootstrapForm">
@@ -29,7 +32,7 @@
     <fieldset>
         <label for="589782286">Nama <small>👤</small> :</label>
     <i class="form-group">
-            <input id="740531870" type="text" name="entry.740531870" class="name-com">
+            <input id="740531870" type="text" name="entry.740531870" class="name-com" required>
      </i>
         </fieldset>
 
@@ -38,7 +41,7 @@
     <fieldset>
         <label for="1337105458">Alamat <small>🏠</small> :</label>
         <i class="form-group">
-            <textarea id="1899843432" name="entry.1899843432" class="comment-com"></textarea>
+            <textarea id="1899843432" name="entry.1899843432" class="comment-com" required></textarea>
         </i>
     </fieldset>
   </div>
@@ -48,7 +51,7 @@
     <fieldset>
         <label for="1037928498">Hadir <small>✔️</small> : </label>
         <i class="name-com2">
-            <select id="1037928498" name="entry.668479367" class="comment-com">
+            <select id="1037928498" name="entry.668479367" class="comment-com" required>
                 <option value="Ya, Hadir">Ya, Hadir</option>
                 <option value="Tidak, Maaf tidak bisa Hadir">Tidak, Maaf tidak bisa Hadir</option>
             </select>
@@ -60,7 +63,7 @@
     <fieldset>
         <label for="306949951">Note <small>✒️</small></label>
         <i class="form-group">
-            <textarea id="1334340083" name="entry.1334340083" class="comment-com"></textarea>
+            <textarea id="1334340083" name="entry.1334340083" class="comment-com" required></textarea>
         </i>
     </fieldset>
   </div>
@@ -80,6 +83,7 @@
 </form>
 </div>
 
+
   <div class="wrapper">
   <div class="book"></div>
     <div class="comments-counter">
@@ -93,7 +97,7 @@
   <div class="alert" id="alert">
   <span id="alert-message"></span>
 </div>
-
+</div>
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -232,6 +236,12 @@ function showMore() {
  
 </script>
 
+ <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<script>
+ AOS.init({
+  duration: 2200,
+})
+</script>
 <script>
 function showAlert(message, type) {
   const alertElement = document.getElementById('alert');
