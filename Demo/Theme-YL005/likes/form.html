@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form Likes</title>
+</head>
+<body>
+	<form action="proses.php" method="post">
+		<input type="hidden" name="likes" value="1">
+		<button type="submit">Likes</button>
+	</form>
+	
+	<?php
+		// Tampilkan jumlah likes dari database
+		include 'koneksi.php';
+		$query = "SELECT likes FROM likes_table";
+		$result = mysqli_query($koneksi, $query);
+		$row = mysqli_fetch_assoc($result);
+		echo "Jumlah Likes: " . $row['likes'];
+	?>
+</body>
+</htm>
+

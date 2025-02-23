@@ -1,0 +1,10 @@
+CREATE DATABASE likes_db;
+
+USE likes_db;
+
+CREATE TABLE likes_table (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	likes INT DEFAULT 0
+);
+
+INSERT INTO likes_table (likes) VALUES (0);
