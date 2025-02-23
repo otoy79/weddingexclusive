@@ -139,7 +139,7 @@ a:link {
   <h2>12 Mei 20oo</h2>
 </div>
     <div class="wel-footer">
-     <button class="close-wel" onmousedown="bleep1.play()">✉️ Open Invitation</button>
+     <button class="close-wel" id="btnspec2"><i>✉️ Open Invitation</i></button>
   </div></div>
 
  <canvas id="canvas" class="canvas1"></canvas>
@@ -812,7 +812,7 @@ function draw() {
    }
    
    ctx.quadraticCurveTo(prev.x, prev.y, canvas.width, canvas.height)
-   ctx.fillStyle = 'rgba(212, 13, 175, 0.1)';
+   ctx.fillStyle = 'rgba(52, 100, 235, 0.3)';
    ctx.closePath();  //draw to first point
    ctx.shadowColor = 'rgba(212, 13, 175, 0.1)';
    ctx.shadowBlur = 10;
