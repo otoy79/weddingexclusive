@@ -1,0 +1,96 @@
+https://docs.google.com/forms/d/e/1FAIpQLSdm6C-xaslcHWbVIZpR6DAjiOwIUfPucPjKtn5UAKPY0G9CQg/viewform?usp=header
+
+
+https://script.google.com/macros/s/AKfycbzJkqcVSXIY6tW7eV8iPpoaEbJ8f3IstdWpVyUc5BiHDWsxnjsm-mliCoRNWk5yJHTD/exec
+
+
+
+
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSdm6C-xaslcHWbVIZpR6DAjiOwIUfPucPjKtn5UAKPY0G9CQg/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+    <fieldset>
+        <h2>Buku Tamu<br><small>Form Tamu Undangan Okta dan Rofiq</small></h2>
+    </fieldset>
+
+
+    <!-- Field type: "short" id: "1848942685" -->
+    <fieldset>
+        <legend for="1848942685">Nama</legend>
+        <div class="form-group">
+            <input id="1122581856" type="text" name="entry.1122581856" class="form-control" >
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "paragraph" id: "1925907520" -->
+    <fieldset>
+        <legend for="1925907520">Alamat</legend>
+        <div class="form-group">
+            <textarea id="242241455" name="entry.242241455" class="form-control" ></textarea>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "checkboxes" id: "1426594648" -->
+    <fieldset>
+        <legend for="1426594648">Hadir</legend>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="entry.2066871851" value="Ya, Hadir" >
+                    Ya, Hadir
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="entry.2066871851" value="Tidak, Maaf Tidak bisa Hadir" >
+                    Tidak, Maaf Tidak bisa Hadir
+                </label>
+            </div>
+        </div>
+    </fieldset>
+
+
+    <!-- Field type: "short" id: "1124265517" -->
+    <fieldset>
+        <legend for="1124265517">Note</legend>
+        <div class="form-group">
+            <input id="1034149149" type="text" name="entry.1034149149" class="form-control" >
+        </div>
+    </fieldset>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="-8414649495665982639">
+    <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+JS
+// This script requires jQuery and jquery-form plugin
+// You can use these ones from Cloudflare CDN:
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+//
+$('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            alert('Form Submitted. Thanks.')
+            // You can also redirect the user to a custom thank-you page:
+            // window.location = 'http://www.mydomain.com/thankyoupage.html'
+        }
+    })
+})
